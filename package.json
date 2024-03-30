@@ -10,7 +10,7 @@
   "scripts": {
     "format": "prettier --write .",
     "prepare": "husky",
-    "release": "np"
+    "release": "np --yolo"
   },
   "peerDependencies": {
     "eslint": ">= 8"
