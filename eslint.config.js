@@ -1,9 +1,9 @@
 // @ts-check
-import config from "./dist/index.js";
+import { mkizka } from "./dist/index.js";
 
 export default [
   { ignores: ["dist"] },
-  ...config({
+  ...mkizka({
     alias: {
       "@": "./src",
     },
