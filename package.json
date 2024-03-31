@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "format": "prettier --write . && pnpm -s lint --fix",
+    "format": "prettier --write . && eslint . --fix",
     "prepare": "husky",
     "release": "pnpm -s build && np",
     "test": "pnpm -s build && vitest run"
@@ -48,6 +48,7 @@
     "access": "public"
   },
   "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
+    "*": "prettier --ignore-unknown --write",
+    "*.ts": "eslint --fix"
   }
 }
