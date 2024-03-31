@@ -10,11 +10,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "format": "prettier --write . && pnpm -s lint --fix",
     "lint": "pnpm -s build && eslint .",
     "prepare": "husky",
-    "release": "np --no-tests"
+    "release": "pnpm -s build && np --no-tests"
   },
   "peerDependencies": {
     "@dword-design/eslint-plugin-import-alias": ">= 5",
