@@ -4,14 +4,15 @@
   "type": "module",
   "license": "MIT",
   "packageManager": "pnpm@8.15.5",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc",
-    "dev": "tsc -w",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "format": "prettier --write . && pnpm -s lint --fix",
     "prepare": "husky",
     "release": "pnpm -s build && np",
@@ -39,6 +40,7 @@
     "np": "^10.0.2",
     "prettier": "^3.2.5",
     "prettier-plugin-pkg": "^0.18.1",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0"
   },
