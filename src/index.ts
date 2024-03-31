@@ -15,17 +15,15 @@ export const mkizka = (
   options?: Options,
 ): ReturnType<typeof tseslint.config> => {
   const configs: ConfigWithExtends[] = [
-    // ts
+    eslint.configs.recommended,
     {
       files: ["**/*.js", "**/*.jsx"],
-      extends: [eslint.configs.recommended],
       languageOptions: {
         globals: {
           ...globals.node,
         },
       },
     },
-    // js
     {
       files: ["**/*.ts", "**/*.tsx"],
       extends: tseslint.configs.recommended,
