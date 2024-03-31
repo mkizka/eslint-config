@@ -1,5 +1,4 @@
 import { FlatCompat } from "@eslint/eslintrc";
-import eslint from "@eslint/js";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
@@ -14,7 +13,6 @@ export const mkizka = (
   options?: Options,
 ): ReturnType<typeof tseslint.config> => {
   const configs: ConfigWithExtends[] = [
-    eslint.configs.recommended,
     ...tseslint.configs.recommended,
     {
       languageOptions: {
