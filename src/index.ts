@@ -24,6 +24,7 @@ const config = ({ alias }: Config): ReturnType<typeof tseslint.config> =>
         "plugin:eqeqeq-fix/recommended",
         "plugin:@dword-design/import-alias/recommended",
       ),
+      ...compat.plugins("unused-imports"),
     ],
     plugins: {
       "@typescript-eslint": tseslint.plugin,
@@ -42,6 +43,8 @@ const config = ({ alias }: Config): ReturnType<typeof tseslint.config> =>
       "simple-import-sort/exports": "error",
       // @dword-design/import-alias
       "@dword-design/import-alias/prefer-alias": ["error", { alias }],
+      // unused-imports
+      "unused-imports/no-unused-imports": "error",
     },
   });
 

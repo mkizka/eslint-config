@@ -1,4 +1,11 @@
 // @ts-check
 import config from "./dist/index.js";
 
-export default config({ alias: { "@": "./src" } });
+export default [
+  { ignores: ["dist"] },
+  ...config({
+    alias: {
+      "@": "./src",
+    },
+  }),
+];
