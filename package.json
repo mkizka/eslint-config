@@ -4,13 +4,15 @@
   "type": "module",
   "license": "MIT",
   "packageManager": "pnpm@8.15.5",
-  "main": "eslint.config.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "eslint.config.js"
+    "dist"
   ],
   "scripts": {
-    "format": "prettier --write . && eslint --fix .",
-    "lint": "eslint .",
+    "build": "tsc",
+    "format": "prettier --write . && pnpm -s lint --fix",
+    "lint": "pnpm -s build && eslint .",
     "prepare": "husky",
     "release": "np --yolo"
   },
@@ -28,6 +30,8 @@
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
+    "@types/eslint__eslintrc": "^2.1.1",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
