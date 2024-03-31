@@ -66,9 +66,10 @@ export const mkizka = (
     configs.push({
       extends: compat.extends("plugin:@dword-design/import-alias/recommended"),
       rules: {
-        "@dword-design/import-alias/prefer-alias": options?.alias
-          ? ["error", { alias: options.alias }]
-          : "off",
+        "@dword-design/import-alias/prefer-alias": [
+          "error",
+          { alias: options.alias },
+        ],
       },
     });
   }
