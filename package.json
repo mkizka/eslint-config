@@ -15,7 +15,7 @@
     "format": "prettier --write . && pnpm -s lint --fix",
     "prepare": "husky",
     "release": "pnpm -s build && np",
-    "test": "pnpm -s build && eslint ."
+    "test": "pnpm -s build && vitest run"
   },
   "peerDependencies": {
     "@dword-design/eslint-plugin-import-alias": ">= 5",
@@ -39,7 +39,8 @@
     "np": "^10.0.2",
     "prettier": "^3.2.5",
     "prettier-plugin-pkg": "^0.18.1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
   },
   "publishConfig": {
     "access": "public"
