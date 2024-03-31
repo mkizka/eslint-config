@@ -1,15 +1,16 @@
-import { execSync } from "child_process";
+// @ts-ignore
+import { FlatESLint as ESLint } from "eslint/use-at-your-own-risk";
 import { describe, expect, test } from "vitest";
-
-const exec = (cmd: string) => JSON.parse(execSync(cmd).toString());
 
 describe("スナップショットテスト", () => {
   test("index.js", async () => {
-    const result = exec("pnpm eslint --print-config index.js");
+    const eslint = new ESLint();
+    const result = await eslint.calculateConfigForFile("index.js");
     expect(result).toMatchSnapshot();
   });
   test("index.ts", async () => {
-    const result = exec("pnpm eslint --print-config index.ts");
+    const eslint = new ESLint();
+    const result = await eslint.calculateConfigForFile("index.ts");
     expect(result).toMatchSnapshot();
   });
 });

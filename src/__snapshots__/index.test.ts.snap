@@ -89,6 +89,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "eqeqeq-fix",
     "@dword-design/import-alias",
   ],
+  "processor": undefined,
   "rules": {
     "@dword-design/import-alias/prefer-alias": [
       2,
@@ -310,7 +311,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
 {
   "languageOptions": {
     "ecmaVersion": "latest",
-    "globals": {},
     "parser": "typescript-eslint/parser@7.4.0",
     "parserOptions": {
       "project": true,
@@ -325,6 +325,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "eqeqeq-fix",
     "@dword-design/import-alias",
   ],
+  "processor": undefined,
   "rules": {
     "@dword-design/import-alias/prefer-alias": [
       2,
