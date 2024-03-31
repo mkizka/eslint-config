@@ -39,7 +39,6 @@ export const mkizka = (
         "@typescript-eslint/no-floating-promises": "error",
       },
     },
-    // commons
     {
       plugins: {
         "simple-import-sort": simpleImportSort,
