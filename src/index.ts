@@ -5,11 +5,11 @@ import tseslint from "typescript-eslint";
 
 const compat = new FlatCompat();
 
-type Config = {
-  alias: Record<string, string>;
+type Options = {
+  alias?: Record<string, string>;
 };
 
-const config = ({ alias }: Config): ReturnType<typeof tseslint.config> =>
+export const mkizka = (options?: Options): ReturnType<typeof tseslint.config> =>
   tseslint.config(eslint.configs.recommended, {
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
@@ -42,10 +42,10 @@ const config = ({ alias }: Config): ReturnType<typeof tseslint.config> =>
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
       // @dword-design/import-alias
-      "@dword-design/import-alias/prefer-alias": ["error", { alias }],
+      "@dword-design/import-alias/prefer-alias": options?.alias
+        ? ["error", { alias: options.alias }]
+        : "off",
       // unused-imports
       "unused-imports/no-unused-imports": "error",
     },
   });
-
-export default config;
