@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
+    "dev": "tsc -w",
     "format": "prettier --write . && pnpm -s lint --fix",
     "prepare": "husky",
     "release": "pnpm -s build && np",
@@ -25,6 +26,7 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.0.2",
     "eslint-plugin-simple-import-sort": "^12.0.0",
+    "globals": "^15.0.0",
     "typescript-eslint": "^7.4.0"
   },
   "devDependencies": {

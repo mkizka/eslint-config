@@ -1,6 +1,7 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import globals from "globals";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
@@ -14,9 +15,20 @@ export const mkizka = (
   options?: Options,
 ): ReturnType<typeof tseslint.config> => {
   const configs: ConfigWithExtends[] = [
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+    // ts
     {
+      files: ["**/*.js", "**/*.jsx"],
+      extends: [eslint.configs.recommended],
+      languageOptions: {
+        globals: {
+          ...globals.node,
+        },
+      },
+    },
+    // js
+    {
+      files: ["**/*.ts", "**/*.tsx"],
+      extends: tseslint.configs.recommended,
       languageOptions: {
         parserOptions: {
           project: true,
@@ -29,6 +41,7 @@ export const mkizka = (
         "@typescript-eslint/no-floating-promises": "error",
       },
     },
+    // commons
     {
       plugins: {
         "simple-import-sort": simpleImportSort,
