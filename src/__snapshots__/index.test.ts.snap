@@ -102,6 +102,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "@eslint-community/eslint-comments/disable-enable-pair": [
       2,
+      {
+        "allowWholeFile": true,
+      },
     ],
     "@eslint-community/eslint-comments/no-aggregating-enable": [
       2,
@@ -354,6 +357,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "@eslint-community/eslint-comments/disable-enable-pair": [
       2,
+      {
+        "allowWholeFile": true,
+      },
     ],
     "@eslint-community/eslint-comments/no-aggregating-enable": [
       2,

@@ -61,7 +61,14 @@ export const mkizka = (
         "@typescript-eslint/eqeqeq": "off",
       },
     },
-    ...compat.extends("plugin:@eslint-community/eslint-comments/recommended"),
+    {
+      extends: compat.extends(
+        "plugin:@eslint-community/eslint-comments/recommended",
+      ),
+      rules: {
+        "@eslint-community/eslint-comments/disable-enable-pair": "off",
+      },
+    },
   ];
   if (options?.alias) {
     configs.push({
