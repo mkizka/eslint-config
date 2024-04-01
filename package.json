@@ -15,11 +15,13 @@
     "dev": "tsup --watch",
     "format": "prettier --write . && eslint . --fix",
     "prepare": "husky",
+    "preview": "pnpm -s dlx @eslint/config-inspector@latest",
     "release": "pnpm -s build && np",
     "test": "pnpm -s build && vitest run"
   },
   "peerDependencies": {
     "@dword-design/eslint-plugin-import-alias": ">= 5",
+    "@eslint-community/eslint-plugin-eslint-comments": ">= 4",
     "eslint": ">= 8",
     "eslint-plugin-eqeqeq-fix": ">= 1",
     "eslint-plugin-unused-imports": ">= 3"

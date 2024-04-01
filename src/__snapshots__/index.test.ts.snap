@@ -87,6 +87,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "simple-import-sort:eslint-plugin-simple-import-sort@12.0.0",
     "unused-imports",
     "eqeqeq-fix",
+    "@eslint-community/eslint-comments",
     "@dword-design/import-alias",
   ],
   "processor": undefined,
@@ -98,6 +99,21 @@ exports[`スナップショットテスト > index.js 1`] = `
           "@": "./src",
         },
       },
+    ],
+    "@eslint-community/eslint-comments/disable-enable-pair": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-aggregating-enable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-duplicate-disable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-unlimited-disable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-unused-enable": [
+      2,
     ],
     "@typescript-eslint/eqeqeq": [
       0,
@@ -323,6 +339,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "simple-import-sort:eslint-plugin-simple-import-sort@12.0.0",
     "unused-imports",
     "eqeqeq-fix",
+    "@eslint-community/eslint-comments",
     "@dword-design/import-alias",
   ],
   "processor": undefined,
@@ -334,6 +351,21 @@ exports[`スナップショットテスト > index.ts 1`] = `
           "@": "./src",
         },
       },
+    ],
+    "@eslint-community/eslint-comments/disable-enable-pair": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-aggregating-enable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-duplicate-disable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-unlimited-disable": [
+      2,
+    ],
+    "@eslint-community/eslint-comments/no-unused-enable": [
+      2,
     ],
     "@typescript-eslint/ban-ts-comment": [
       0,
