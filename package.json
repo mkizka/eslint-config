@@ -13,7 +13,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "format": "prettier --write . && eslint . --fix",
+    "format": "prettier --write . && pnpm -s lint --fix",
+    "lint": "pnpm -s build && eslint .",
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
     "release": "pnpm -s build && np",

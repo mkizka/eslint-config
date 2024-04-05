@@ -5,6 +5,8 @@ import globals from "globals";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
+import { readAliasFromTsconfig } from "@/utils/read-alias.js";
+
 const compat = new FlatCompat();
 
 type Options = {
@@ -70,14 +72,12 @@ export const mkizka = (
       },
     },
   ];
-  if (options?.alias) {
+  const alias = options?.alias ?? readAliasFromTsconfig();
+  if (alias) {
     configs.push({
       extends: compat.extends("plugin:@dword-design/import-alias/recommended"),
       rules: {
-        "@dword-design/import-alias/prefer-alias": [
-          "error",
-          { alias: options.alias },
-        ],
+        "@dword-design/import-alias/prefer-alias": ["error", { alias }],
       },
     });
   }
