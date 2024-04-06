@@ -15,3 +15,9 @@ declare module "eslint-plugin-eqeqeq-fix" {
   const eqeqeqFix: any;
   export default eqeqeqFix;
 }
+
+declare module "@dword-design/eslint-plugin-import-alias" {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const importAlias: any;
+  export default importAlias;
+}

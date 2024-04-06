@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@dword-design/eslint-plugin-import-alias':
-    specifier: '>= 5'
+    specifier: ^5.0.0
     version: 5.0.0
   '@eslint-community/eslint-plugin-eslint-comments':
     specifier: '>= 4'

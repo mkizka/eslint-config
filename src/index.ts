@@ -1,3 +1,4 @@
+import importAlias from "@dword-design/eslint-plugin-import-alias";
 import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
@@ -83,7 +84,9 @@ export const mkizka = (
   const alias = options?.alias ?? readAliasFromTsconfig();
   if (alias) {
     configs.push({
-      extends: compat.extends("plugin:@dword-design/import-alias/recommended"),
+      plugins: {
+        "@dword-design/import-alias": importAlias,
+      },
       rules: {
         "@dword-design/import-alias/prefer-alias": ["error", { alias }],
       },
