@@ -1,23 +1,31 @@
-declare module "eslint-plugin-simple-import-sort" {
+type Plugin = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const simpleImportSort: any;
+  configs: Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  rules: Record<string, any>;
+};
+
+declare module "eslint-plugin-simple-import-sort" {
+  const simpleImportSort: Plugin;
   export default simpleImportSort;
 }
 
 declare module "eslint-plugin-unused-imports" {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const unusedImports: any;
+  const unusedImports: Plugin;
   export default unusedImports;
 }
 
 declare module "eslint-plugin-eqeqeq-fix" {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const eqeqeqFix: any;
+  const eqeqeqFix: Plugin;
   export default eqeqeqFix;
 }
 
 declare module "@dword-design/eslint-plugin-import-alias" {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const importAlias: any;
+  const importAlias: Plugin;
   export default importAlias;
+}
+
+declare module "@eslint-community/eslint-plugin-eslint-comments" {
+  const eslintComments: Plugin;
+  export default eslintComments;
 }

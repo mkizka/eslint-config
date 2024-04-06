@@ -1,6 +1,6 @@
 import importAlias from "@dword-design/eslint-plugin-import-alias";
-import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
+import eslintComments from "@eslint-community/eslint-plugin-eslint-comments";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
@@ -9,8 +9,6 @@ import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
 import { readAliasFromTsconfig } from "@/utils/read-alias.js";
-
-const compat = new FlatCompat();
 
 type Options = {
   alias?: Record<string, string>;
@@ -73,10 +71,11 @@ export const mkizka = (
       },
     },
     {
-      extends: compat.extends(
-        "plugin:@eslint-community/eslint-comments/recommended",
-      ),
+      plugins: {
+        "@eslint-community/eslint-comments": eslintComments,
+      },
       rules: {
+        ...eslintComments.configs.recommended.rules,
         "@eslint-community/eslint-comments/disable-enable-pair": "off",
       },
     },
