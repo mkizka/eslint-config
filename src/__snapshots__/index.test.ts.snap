@@ -78,9 +78,12 @@ exports[`スナップショットテスト > index.js 1`] = `
       "setTimeout": false,
       "structuredClone": false,
     },
-    "parser": "espree@9.6.1",
+    "parser": "espree@10.0.1",
     "parserOptions": {},
     "sourceType": "module",
+  },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
   },
   "plugins": [
     "@",
@@ -154,6 +157,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     "no-const-assign": [
       2,
     ],
+    "no-constant-binary-expression": [
+      2,
+    ],
     "no-constant-condition": [
       2,
     ],
@@ -190,13 +196,13 @@ exports[`スナップショットテスト > index.js 1`] = `
     "no-empty-pattern": [
       2,
     ],
+    "no-empty-static-block": [
+      2,
+    ],
     "no-ex-assign": [
       2,
     ],
     "no-extra-boolean-cast": [
-      2,
-    ],
-    "no-extra-semi": [
       2,
     ],
     "no-fallthrough": [
@@ -211,9 +217,6 @@ exports[`スナップショットテスト > index.js 1`] = `
     "no-import-assign": [
       2,
     ],
-    "no-inner-declarations": [
-      2,
-    ],
     "no-invalid-regexp": [
       2,
     ],
@@ -226,10 +229,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "no-misleading-character-class": [
       2,
     ],
-    "no-mixed-spaces-and-tabs": [
-      2,
-    ],
-    "no-new-symbol": [
+    "no-new-native-nonconstructor": [
       2,
     ],
     "no-nonoctal-decimal-escape": [
@@ -286,6 +286,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     "no-unused-labels": [
       2,
     ],
+    "no-unused-private-class-members": [
+      2,
+    ],
     "no-unused-vars": [
       2,
     ],
@@ -327,15 +330,18 @@ exports[`スナップショットテスト > index.ts 1`] = `
 {
   "languageOptions": {
     "ecmaVersion": "latest",
-    "parser": "typescript-eslint/parser@7.4.0",
+    "parser": "typescript-eslint/parser@7.5.0",
     "parserOptions": {
       "project": true,
     },
     "sourceType": "module",
   },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
+  },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@7.4.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@7.5.0",
     "simple-import-sort:eslint-plugin-simple-import-sort@12.0.0",
     "unused-imports",
     "eqeqeq-fix",
@@ -466,6 +472,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "no-const-assign": [
       0,
     ],
+    "no-constant-binary-expression": [
+      2,
+    ],
     "no-constant-condition": [
       2,
     ],
@@ -502,13 +511,13 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "no-empty-pattern": [
       2,
     ],
+    "no-empty-static-block": [
+      2,
+    ],
     "no-ex-assign": [
       2,
     ],
     "no-extra-boolean-cast": [
-      2,
-    ],
-    "no-extra-semi": [
       2,
     ],
     "no-fallthrough": [
@@ -523,9 +532,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "no-import-assign": [
       0,
     ],
-    "no-inner-declarations": [
-      2,
-    ],
     "no-invalid-regexp": [
       2,
     ],
@@ -538,7 +544,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "no-misleading-character-class": [
       2,
     ],
-    "no-mixed-spaces-and-tabs": [
+    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-symbol": [
@@ -596,6 +602,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "no-unused-labels": [
+      2,
+    ],
+    "no-unused-private-class-members": [
       2,
     ],
     "no-unused-vars": [
