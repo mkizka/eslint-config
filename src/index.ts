@@ -1,5 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
+import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
@@ -61,9 +62,13 @@ export const mkizka = (
       },
     },
     {
-      extends: compat.extends("plugin:eqeqeq-fix/recommended"),
+      plugins: {
+        "eqeqeq-fix": eqeqeqFix,
+      },
       rules: {
+        eqeqeq: "off",
         "@typescript-eslint/eqeqeq": "off",
+        "eqeqeq-fix/eqeqeq": "error",
       },
     },
     {

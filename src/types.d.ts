@@ -9,3 +9,9 @@ declare module "eslint-plugin-unused-imports" {
   const unusedImports: any;
   export default unusedImports;
 }
+
+declare module "eslint-plugin-eqeqeq-fix" {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const eqeqeqFix: any;
+  export default eqeqeqFix;
+}

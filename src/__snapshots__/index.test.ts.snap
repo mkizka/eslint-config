@@ -128,7 +128,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       0,
     ],
     "eqeqeq-fix/eqeqeq": [
-      1,
+      2,
     ],
     "for-direction": [
       2,
@@ -437,7 +437,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
       0,
     ],
     "eqeqeq-fix/eqeqeq": [
-      1,
+      2,
     ],
     "for-direction": [
       2,
