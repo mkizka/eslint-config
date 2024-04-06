@@ -1,5 +1,4 @@
-// @ts-ignore
-import { FlatESLint as ESLint } from "eslint/use-at-your-own-risk";
+import { ESLint } from "eslint";
 import { describe, expect, test } from "vitest";
 
 describe("スナップショットテスト", () => {
