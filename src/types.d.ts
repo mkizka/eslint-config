@@ -24,8 +24,3 @@ declare module "@dword-design/eslint-plugin-import-alias" {
   const importAlias: Plugin;
   export default importAlias;
 }
-
-declare module "@eslint-community/eslint-plugin-eslint-comments" {
-  const eslintComments: Plugin;
-  export default eslintComments;
-}

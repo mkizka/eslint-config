@@ -1,6 +1,5 @@
 import importAlias from "@dword-design/eslint-plugin-import-alias";
 import eslint from "@eslint/js";
-import eslintComments from "@eslint-community/eslint-plugin-eslint-comments";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
@@ -19,6 +18,11 @@ export const mkizka = (
 ): ReturnType<typeof tseslint.config> => {
   const configs: ConfigWithExtends[] = [
     eslint.configs.recommended,
+    {
+      linterOptions: {
+        reportUnusedDisableDirectives: "error",
+      },
+    },
     {
       files: ["**/*.js", "**/*.jsx"],
       languageOptions: {
@@ -68,15 +72,6 @@ export const mkizka = (
         eqeqeq: "off",
         "@typescript-eslint/eqeqeq": "off",
         "eqeqeq-fix/eqeqeq": "error",
-      },
-    },
-    {
-      plugins: {
-        "@eslint-community/eslint-comments": eslintComments,
-      },
-      rules: {
-        ...eslintComments.configs.recommended.rules,
-        "@eslint-community/eslint-comments/disable-enable-pair": "off",
       },
     },
   ];
