@@ -1,5 +1,7 @@
 # @mkizka/eslint-config
 
+ESLint rules for mkizka
+
 ```js
 // eslint.config.js
 import { mkizka } from "@mkizka/eslint-config";

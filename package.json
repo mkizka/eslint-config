@@ -2,6 +2,7 @@
   "name": "@mkizka/eslint-config",
   "version": "4.1.0",
   "type": "module",
+  "description": "ESLint rules for mkizka",
   "repository": {
     "type": "git",
     "url": "https://github.com/mkizka/eslint-config.git"
