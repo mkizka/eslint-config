@@ -341,6 +341,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
         },
       },
     ],
+    "@typescript-eslint/await-thenable": [
+      2,
+    ],
     "@typescript-eslint/ban-ts-comment": [
       0,
     ],
@@ -356,7 +359,13 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-array-constructor": [
       2,
     ],
+    "@typescript-eslint/no-base-to-string": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
+      2,
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -368,10 +377,19 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-floating-promises": [
       2,
     ],
+    "@typescript-eslint/no-for-in-array": [
+      2,
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      2,
+    ],
     "@typescript-eslint/no-loss-of-precision": [
       2,
     ],
     "@typescript-eslint/no-misused-new": [
+      2,
+    ],
+    "@typescript-eslint/no-misused-promises": [
       2,
     ],
     "@typescript-eslint/no-namespace": [
@@ -383,13 +401,37 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-non-null-assertion": [
       0,
     ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-argument": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-call": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-enum-comparison": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-member-access": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-return": [
       2,
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -401,7 +443,19 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
+    "@typescript-eslint/require-await": [
+      2,
+    ],
+    "@typescript-eslint/restrict-plus-operands": [
+      2,
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      2,
+    ],
     "@typescript-eslint/triple-slash-reference": [
+      2,
+    ],
+    "@typescript-eslint/unbound-method": [
       2,
     ],
     "constructor-super": [
@@ -496,6 +550,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-global-assign": [
       2,
+    ],
+    "no-implied-eval": [
+      0,
     ],
     "no-import-assign": [
       0,
@@ -601,6 +658,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "prefer-spread": [
       2,
+    ],
+    "require-await": [
+      0,
     ],
     "require-yield": [
       2,
