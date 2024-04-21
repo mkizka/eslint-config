@@ -33,7 +33,7 @@ export const mkizka = (
     },
     {
       files: ["**/*.ts", "**/*.tsx"],
-      extends: tseslint.configs.recommended,
+      extends: tseslint.configs.recommendedTypeChecked,
       languageOptions: {
         parserOptions: {
           project: true,
