@@ -44,6 +44,12 @@ export const mkizka = (
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-misused-promises": [
+          "error",
+          {
+            checksVoidReturn: false,
+          },
+        ],
       },
     },
     {

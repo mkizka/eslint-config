@@ -391,6 +391,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "@typescript-eslint/no-misused-promises": [
       2,
+      {
+        "checksVoidReturn": false,
+      },
     ],
     "@typescript-eslint/no-namespace": [
       2,
