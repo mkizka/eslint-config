@@ -40,7 +40,12 @@ export const mkizka = (
         },
       },
       rules: {
-        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/ban-ts-comment": [
+          "error",
+          {
+            minimumDescriptionLength: 0,
+          },
+        ],
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-misused-promises": [
