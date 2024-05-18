@@ -17,10 +17,13 @@ export const mkizka = (
   options?: Options,
 ): ReturnType<typeof tseslint.config> => {
   const configs: ConfigWithExtends[] = [
-    eslint.configs.recommended,
     {
+      extends: [eslint.configs.recommended],
       linterOptions: {
         reportUnusedDisableDirectives: "error",
+      },
+      rules: {
+        "no-console": "error",
       },
     },
     {
