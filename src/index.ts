@@ -57,6 +57,7 @@ export const mkizka = (
             checksVoidReturn: false,
           },
         ],
+        "@typescript-eslint/no-unnecessary-condition": "error",
       },
     },
     {
