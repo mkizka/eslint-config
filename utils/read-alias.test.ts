@@ -18,7 +18,7 @@ describe("readAliasFromTsconfig", () => {
     mockedFs.readFileSync.mockReturnValue(
       JSON.stringify({
         compilerOptions: {
-          paths,
+          paths: paths as Record<string, string[]>,
         },
       }),
     );

@@ -1,6 +1,12 @@
 type Plugin = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  configs: Record<string, any>;
+  configs: {
+    recommended: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      rules: Record<string, any>;
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    [key: string]: any;
+  };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   rules: Record<string, any>;
 };
@@ -21,6 +27,11 @@ declare module "eslint-plugin-eqeqeq-fix" {
 }
 
 declare module "@dword-design/eslint-plugin-import-alias" {
+  const importAlias: Plugin;
+  export default importAlias;
+}
+
+declare module "eslint-plugin-tailwindcss" {
   const importAlias: Plugin;
   export default importAlias;
 }

@@ -3,7 +3,7 @@ import path from "path";
 
 type TSConfig = {
   compilerOptions: {
-    paths: Record<string, string[]>;
+    paths?: Record<string, string[]>;
   };
 };
 
@@ -14,7 +14,7 @@ const readTsconfigPaths = () => {
       "utf-8",
     );
     const tsconfig = JSON.parse(file) as TSConfig;
-    return tsconfig.compilerOptions?.paths ?? {};
+    return tsconfig.compilerOptions.paths ?? {};
   } catch {
     return {};
   }
