@@ -57,7 +57,6 @@ export const typescript: SharableConfig<Options> = (options) => {
             checksVoidReturn: false,
           },
         ],
-        "@typescript-eslint/no-unnecessary-condition": "error",
       },
     },
     {
