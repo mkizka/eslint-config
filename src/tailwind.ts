@@ -11,6 +11,7 @@ type Options = {
 export const tailwind: SharableConfig<Options> = (options) => {
   const configs: ConfigWithExtends[] = [
     {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       extends: tailwindcss.configs["flat/recommended"],
       rules: {
         "tailwindcss/classnames-order": "error",
