@@ -110,6 +110,12 @@ exports[`スナップショットテスト > index.js 1`] = `
     "@typescript-eslint/eqeqeq": [
       0,
     ],
+    "@typescript-eslint/no-explicit-any": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-unused-vars": [
       0,
     ],
@@ -414,7 +420,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-extra-non-null-assertion": [
       2,
@@ -468,7 +474,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-call": [
       2,
