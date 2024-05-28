@@ -36,7 +36,7 @@ export const typescript: SharableConfig<Options> = (options) => {
     },
     {
       files: ["**/*.ts", "**/*.tsx"],
-      extends: tseslint.configs.recommendedTypeChecked,
+      extends: tseslint.configs.strictTypeChecked,
       languageOptions: {
         parserOptions: {
           project: true,
