@@ -79,7 +79,11 @@ exports[`スナップショットテスト > index.js 1`] = `
       "structuredClone": false,
     },
     "parser": "espree@10.0.1",
-    "parserOptions": {},
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true,
+      },
+    },
     "sourceType": "module",
   },
   "linterOptions": {
@@ -91,6 +95,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "unused-imports",
     "eqeqeq-fix",
     "@dword-design/import-alias",
+    "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
@@ -300,6 +305,36 @@ exports[`スナップショットテスト > index.js 1`] = `
     "simple-import-sort/imports": [
       2,
     ],
+    "tailwindcss/classnames-order": [
+      2,
+    ],
+    "tailwindcss/enforces-negative-arbitrary-values": [
+      1,
+    ],
+    "tailwindcss/enforces-shorthand": [
+      1,
+    ],
+    "tailwindcss/migration-from-tailwind-2": [
+      2,
+    ],
+    "tailwindcss/no-arbitrary-value": [
+      0,
+    ],
+    "tailwindcss/no-contradicting-classname": [
+      2,
+    ],
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "callees": [
+          "cn",
+          "cva",
+        ],
+      },
+    ],
+    "tailwindcss/no-unnecessary-arbitrary-value": [
+      1,
+    ],
     "unused-imports/no-unused-imports": [
       2,
     ],
@@ -319,6 +354,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser@7.6.0",
     "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true,
+      },
       "project": true,
     },
     "sourceType": "module",
@@ -333,6 +371,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "unused-imports",
     "eqeqeq-fix",
     "@dword-design/import-alias",
+    "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
@@ -685,6 +724,36 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "simple-import-sort/imports": [
       2,
+    ],
+    "tailwindcss/classnames-order": [
+      2,
+    ],
+    "tailwindcss/enforces-negative-arbitrary-values": [
+      1,
+    ],
+    "tailwindcss/enforces-shorthand": [
+      1,
+    ],
+    "tailwindcss/migration-from-tailwind-2": [
+      2,
+    ],
+    "tailwindcss/no-arbitrary-value": [
+      0,
+    ],
+    "tailwindcss/no-contradicting-classname": [
+      2,
+    ],
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "callees": [
+          "cn",
+          "cva",
+        ],
+      },
+    ],
+    "tailwindcss/no-unnecessary-arbitrary-value": [
+      1,
     ],
     "unused-imports/no-unused-imports": [
       2,

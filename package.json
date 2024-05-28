@@ -18,7 +18,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "format": "prettier --write . && pnpm -s lint --fix",
+    "format": "pnpm -s lint --fix && prettier --write .",
     "lint": "pnpm -s build && eslint .",
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
@@ -33,6 +33,7 @@
     "@eslint/js": "^9.0.0",
     "eslint-plugin-eqeqeq-fix": "^1.0.3",
     "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-tailwindcss": "^3.17.0",
     "eslint-plugin-unused-imports": "^3.1.0",
     "globals": "^15.0.0",
     "typescript-eslint": "^7.6.0"
@@ -41,6 +42,7 @@
     "@tsconfig/node20": "^20.1.4",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.5",
+    "eslint": "^9.3.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "np": "^10.0.3",

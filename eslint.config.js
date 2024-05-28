@@ -1,4 +1,14 @@
 // @ts-check
-import { mkizka } from "./dist/index.js";
+import { configs } from "./dist/index.js";
 
-export default [{ ignores: ["dist"] }, ...mkizka()];
+export default [
+  { ignores: ["dist"] },
+  ...configs.typescript(),
+  ...configs.tailwind(),
+  {
+    rules: {
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
+];

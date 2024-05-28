@@ -1,13 +1,5 @@
 type Plugin = {
-  configs: {
-    recommended: {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      rules: Record<string, any>;
-    };
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    [key: string]: any;
-  };
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  configs: Record<string, any>;
   rules: Record<string, any>;
 };
 
