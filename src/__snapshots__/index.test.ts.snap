@@ -567,12 +567,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/restrict-template-expressions": [
       2,
       {
-        "allowAny": false,
-        "allowBoolean": false,
-        "allowNever": false,
-        "allowNullish": false,
-        "allowNumber": false,
-        "allowRegExp": false,
+        "allowNumber": true,
       },
     ],
     "@typescript-eslint/triple-slash-reference": [

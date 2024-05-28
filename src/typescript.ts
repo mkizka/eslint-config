@@ -57,6 +57,12 @@ export const typescript: SharableConfig<Options> = (options) => {
             checksVoidReturn: false,
           },
         ],
+        "@typescript-eslint/restrict-template-expressions": [
+          "error",
+          {
+            allowNumber: true,
+          },
+        ],
       },
     },
     {
