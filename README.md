@@ -4,9 +4,9 @@ ESLint rules for mkizka
 
 ```js
 // eslint.config.js
-import { mkizka } from "@mkizka/eslint-config";
+import { configs } from "@mkizka/eslint-config";
 
-export default mkizka()
+export default configs.typescript()
 
 // or
 
@@ -16,10 +16,11 @@ export default [
       ...
     ],
   },
-  ...mkizka({
+  ...configs.typescript({
     alias: {
       "@": "./app", // 指定しなかった場合はtsconfig.jsonの内容を使用します
     },
   }),
+  ...configs.tailwind(),
 ];
 ```
