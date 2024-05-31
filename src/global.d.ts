@@ -29,3 +29,22 @@ declare module "eslint-plugin-tailwindcss" {
   const importAlias: Plugin;
   export default importAlias;
 }
+
+declare module "@eslint/compat" {
+  export function fixupPluginRules(plugin: Plugin): Plugin;
+}
+
+declare module "eslint-plugin-react/configs/jsx-runtime.js" {
+  const reactJsxRuntime: Plugin;
+  export default reactJsxRuntime;
+}
+
+declare module "eslint-plugin-react/configs/recommended.js" {
+  const reactRecommended: Plugin;
+  export default reactRecommended;
+}
+
+declare module "eslint-plugin-react-hooks" {
+  const reactHooks: Plugin;
+  export default reactHooks;
+}

@@ -21,6 +21,7 @@ export default [
       "@": "./app", // 指定しなかった場合はtsconfig.jsonの内容を使用します
     },
   }),
+  ...configs.react(),
   ...configs.tailwind(),
 ];
 ```
