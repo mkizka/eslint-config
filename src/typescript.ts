@@ -63,6 +63,7 @@ export const typescript: SharableConfig<Options> = (options) => {
             allowNumber: true,
           },
         ],
+        "@typescript-eslint/no-confusing-void-expression": "off",
       },
     },
     {

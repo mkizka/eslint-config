@@ -492,7 +492,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
