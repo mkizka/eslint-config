@@ -69,6 +69,12 @@ export const typescript: SharableConfig<Options> = (options) => {
       },
     },
     {
+      files: ["**/*.{spec,test}.ts"],
+      rules: {
+        "@typescript-eslint/no-unsafe-assignment": "off",
+      },
+    },
+    {
       plugins: {
         "simple-import-sort": simpleImportSort,
       },
