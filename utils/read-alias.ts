@@ -1,4 +1,5 @@
 import fs from "fs";
+import JSONC from "jsonc-parser";
 import path from "path";
 
 type TSConfig = {
@@ -13,9 +14,13 @@ const readTsconfigPaths = () => {
       path.join(process.cwd(), "tsconfig.json"),
       "utf-8",
     );
-    const tsconfig = JSON.parse(file) as TSConfig;
+    const tsconfig = JSONC.parse(file) as TSConfig;
     return tsconfig.compilerOptions.paths ?? {};
   } catch {
+    // eslint-disable-next-line no-console
+    console.error(
+      "[@mkizka/eslint-config] tsconfig.jsonの読み込みに失敗しました",
+    );
     return {};
   }
 };

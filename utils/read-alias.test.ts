@@ -16,11 +16,13 @@ describe("readAliasFromTsconfig", () => {
   `("tsconfigのpathsをkey-value形式で取得する", ({ paths, expected }) => {
     // arrange
     mockedFs.readFileSync.mockReturnValue(
-      JSON.stringify({
-        compilerOptions: {
-          paths: paths as Record<string, string[]>,
-        },
-      }),
+      `\
+{
+  "compilerOptions": {
+    // tsconfig.jsonにはコメントも書ける
+    "paths": ${JSON.stringify(paths)}
+  }
+}`,
     );
     // act
     const alias = readAliasFromTsconfig();
