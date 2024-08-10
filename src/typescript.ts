@@ -6,7 +6,7 @@ import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
-
+import gitignore from "eslint-config-flat-gitignore";
 import { readAliasFromTsconfig } from "@/utils/read-alias.js";
 
 import type { SharableConfig } from "./types.js";
@@ -17,6 +17,7 @@ type Options = {
 
 export const typescript: SharableConfig<Options> = (options) => {
   const configs: ConfigWithExtends[] = [
+    gitignore(),
     {
       extends: [eslint.configs.recommended],
       linterOptions: {
