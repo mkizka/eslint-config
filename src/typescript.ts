@@ -1,12 +1,13 @@
 import importAlias from "@dword-design/eslint-plugin-import-alias";
 import eslint from "@eslint/js";
+import gitignore from "eslint-config-flat-gitignore";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
-import gitignore from "eslint-config-flat-gitignore";
+
 import { readAliasFromTsconfig } from "@/utils/read-alias.js";
 
 import type { SharableConfig } from "./types.js";
