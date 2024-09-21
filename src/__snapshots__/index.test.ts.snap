@@ -2,6 +2,7 @@
 
 exports[`スナップショットテスト > index.js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -23,6 +24,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -52,6 +54,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -78,7 +81,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "setTimeout": false,
       "structuredClone": false,
     },
-    "parser": "espree@10.0.1",
+    "parser": "espree@10.1.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -91,8 +94,8 @@ exports[`スナップショットテスト > index.js 1`] = `
   },
   "plugins": [
     "@",
-    "simple-import-sort:eslint-plugin-simple-import-sort@12.0.0",
-    "unused-imports",
+    "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
+    "unused-imports:unused-imports",
     "eqeqeq-fix",
     "@dword-design/import-alias",
     "react",
@@ -107,6 +110,7 @@ exports[`スナップショットテスト > index.js 1`] = `
         "alias": {
           "@": ".",
         },
+        "aliasForSubpaths": false,
       },
     ],
     "@typescript-eslint/eqeqeq": [
@@ -429,9 +433,10 @@ exports[`スナップショットテスト > index.js 1`] = `
 
 exports[`スナップショットテスト > index.ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
-    "parser": "typescript-eslint/parser@7.6.0",
+    "parser": "typescript-eslint/parser@8.6.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -445,9 +450,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@7.6.0",
-    "simple-import-sort:eslint-plugin-simple-import-sort@12.0.0",
-    "unused-imports",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.6.0",
+    "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
+    "unused-imports:unused-imports",
     "eqeqeq-fix",
     "@dword-design/import-alias",
     "react",
@@ -462,6 +467,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
         "alias": {
           "@": ".",
         },
+        "aliasForSubpaths": false,
       },
     ],
     "@typescript-eslint/await-thenable": [
@@ -472,9 +478,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
       {
         "minimumDescriptionLength": 0,
       },
-    ],
-    "@typescript-eslint/ban-types": [
-      2,
     ],
     "@typescript-eslint/consistent-type-imports": [
       2,
@@ -494,6 +497,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-confusing-void-expression": [
       0,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -501,6 +507,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-dynamic-delete": [
+      2,
+    ],
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -522,9 +531,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-invalid-void-type": [
-      2,
-    ],
-    "@typescript-eslint/no-loss-of-precision": [
       2,
     ],
     "@typescript-eslint/no-meaningless-void-operator": [
@@ -557,6 +563,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-redundant-type-constituents": [
       2,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -566,6 +575,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -573,6 +585,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
       2,
     ],
     "@typescript-eslint/no-unsafe-argument": [
@@ -590,10 +605,19 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
+      2,
+    ],
+    "@typescript-eslint/no-unused-expressions": [
       2,
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -602,10 +626,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
-    ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/only-throw-error": [
@@ -614,10 +635,10 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
-    "@typescript-eslint/prefer-includes": [
+    "@typescript-eslint/prefer-literal-enum-member": [
       2,
     ],
-    "@typescript-eslint/prefer-literal-enum-member": [
+    "@typescript-eslint/prefer-namespace-keyword": [
       2,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
@@ -627,9 +648,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -650,6 +668,10 @@ exports[`スナップショットテスト > index.ts 1`] = `
       {
         "allowNumber": true,
       },
+    ],
+    "@typescript-eslint/return-await": [
+      2,
+      "error-handling-correctness-only",
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
@@ -772,13 +794,13 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "no-loss-of-precision": [
-      0,
+      2,
     ],
     "no-misleading-character-class": [
       2,
     ],
     "no-new-native-nonconstructor": [
-      2,
+      0,
     ],
     "no-new-symbol": [
       0,
@@ -800,6 +822,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-regex-spaces": [
       2,
+    ],
+    "no-return-await": [
+      0,
     ],
     "no-self-assign": [
       2,
@@ -836,6 +861,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-unsafe-optional-chaining": [
       2,
+    ],
+    "no-unused-expressions": [
+      0,
     ],
     "no-unused-labels": [
       2,
