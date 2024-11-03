@@ -81,11 +81,12 @@ exports[`スナップショットテスト > index.js 1`] = `
       "setTimeout": false,
       "structuredClone": false,
     },
-    "parser": "espree@10.1.0",
+    "parser": "espree@10.3.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
       },
+      "jsxPragma": null,
     },
     "sourceType": "module",
   },
@@ -436,11 +437,12 @@ exports[`スナップショットテスト > index.ts 1`] = `
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
-    "parser": "typescript-eslint/parser@8.6.0",
+    "parser": "typescript-eslint/parser@8.12.2",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
       },
+      "jsxPragma": null,
       "project": true,
     },
     "sourceType": "module",
@@ -450,7 +452,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.6.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.12.2",
     "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
     "unused-imports:unused-imports",
     "eqeqeq-fix",
