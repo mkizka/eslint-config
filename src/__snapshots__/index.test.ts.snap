@@ -4,7 +4,7 @@ exports[`スナップショットテスト > index.js 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2025,
     "globals": {
       "AbortController": false,
       "AbortSignal": false,
@@ -12,6 +12,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "BroadcastChannel": false,
       "Buffer": false,
       "ByteLengthQueuingStrategy": false,
+      "CloseEvent": false,
       "CompressionStream": false,
       "CountQueuingStrategy": false,
       "Crypto": false,
@@ -24,7 +25,6 @@ exports[`スナップショットテスト > index.js 1`] = `
       "File": false,
       "FormData": false,
       "Headers": false,
-      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -87,6 +87,7 @@ exports[`スナップショットテスト > index.js 1`] = `
         "jsx": true,
       },
       "jsxPragma": null,
+      "sourceType": "module",
     },
     "sourceType": "module",
   },
@@ -100,7 +101,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "eqeqeq-fix",
     "@dword-design/import-alias",
     "react",
-    "react-hooks",
+    "react-hooks:eslint-plugin-react-hooks",
     "tailwindcss",
   ],
   "processor": undefined,
@@ -134,6 +135,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "getter-return": [
       2,
+      {
+        "allowImplicit": false,
+      },
     ],
     "no-async-promise-executor": [
       2,
@@ -149,9 +153,11 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-cond-assign": [
       2,
+      "except-parens",
     ],
     "no-console": [
       2,
+      {},
     ],
     "no-const-assign": [
       2,
@@ -161,6 +167,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-constant-condition": [
       2,
+      {
+        "checkLoops": "allExceptWhileTrue",
+      },
     ],
     "no-control-regex": [
       2,
@@ -188,12 +197,18 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-empty": [
       2,
+      {
+        "allowEmptyCatch": false,
+      },
     ],
     "no-empty-character-class": [
       2,
     ],
     "no-empty-pattern": [
       2,
+      {
+        "allowObjectPatternsAsParameters": false,
+      },
     ],
     "no-empty-static-block": [
       2,
@@ -203,24 +218,40 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-extra-boolean-cast": [
       2,
+      {},
     ],
     "no-fallthrough": [
       2,
+      {
+        "allowEmptyCase": false,
+        "reportUnusedFallthroughComment": false,
+      },
     ],
     "no-func-assign": [
       2,
     ],
     "no-global-assign": [
       2,
+      {
+        "exceptions": [],
+      },
     ],
     "no-import-assign": [
       2,
     ],
     "no-invalid-regexp": [
       2,
+      {},
     ],
     "no-irregular-whitespace": [
       2,
+      {
+        "skipComments": false,
+        "skipJSXText": false,
+        "skipRegExps": false,
+        "skipStrings": true,
+        "skipTemplates": false,
+      },
     ],
     "no-loss-of-precision": [
       2,
@@ -245,12 +276,18 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-redeclare": [
       2,
+      {
+        "builtinGlobals": true,
+      },
     ],
     "no-regex-spaces": [
       2,
     ],
     "no-self-assign": [
       2,
+      {
+        "props": true,
+      },
     ],
     "no-setter-return": [
       2,
@@ -266,6 +303,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-undef": [
       2,
+      {
+        "typeof": false,
+      },
     ],
     "no-unexpected-multiline": [
       2,
@@ -278,9 +318,15 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-unsafe-negation": [
       2,
+      {
+        "enforceForOrderingRelations": false,
+      },
     ],
     "no-unsafe-optional-chaining": [
       2,
+      {
+        "disallowArithmeticOperators": false,
+      },
     ],
     "no-unused-labels": [
       2,
@@ -419,9 +465,16 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "use-isnan": [
       2,
+      {
+        "enforceForIndexOf": false,
+        "enforceForSwitchCase": true,
+      },
     ],
     "valid-typeof": [
       2,
+      {
+        "requireStringLiterals": false,
+      },
     ],
   },
   "settings": {
@@ -436,8 +489,8 @@ exports[`スナップショットテスト > index.ts 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": "latest",
-    "parser": "typescript-eslint/parser@8.12.2",
+    "ecmaVersion": 2025,
+    "parser": "typescript-eslint/parser@8.27.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -452,13 +505,13 @@ exports[`スナップショットテスト > index.ts 1`] = `
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.12.2",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.27.0",
     "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
     "unused-imports:unused-imports",
     "eqeqeq-fix",
     "@dword-design/import-alias",
     "react",
-    "react-hooks",
+    "react-hooks:eslint-plugin-react-hooks",
     "tailwindcss",
   ],
   "processor": undefined,
@@ -550,6 +603,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
         "checksVoidReturn": false,
       },
     ],
+    "@typescript-eslint/no-misused-spread": [
+      2,
+    ],
     "@typescript-eslint/no-mixed-enums": [
       2,
     ],
@@ -624,6 +680,11 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
+      {
+        "allowShortCircuit": false,
+        "allowTaggedTemplates": false,
+        "allowTernary": false,
+      },
     ],
     "@typescript-eslint/no-unused-vars": [
       0,
@@ -653,6 +714,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -704,6 +768,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "getter-return": [
       0,
+      {
+        "allowImplicit": false,
+      },
     ],
     "no-array-constructor": [
       0,
@@ -715,16 +782,18 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-compare-neg-zero": [
       2,
     ],
     "no-cond-assign": [
       2,
+      "except-parens",
     ],
     "no-console": [
       2,
+      {},
     ],
     "no-const-assign": [
       0,
@@ -734,6 +803,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-constant-condition": [
       2,
+      {
+        "checkLoops": "allExceptWhileTrue",
+      },
     ],
     "no-control-regex": [
       2,
@@ -761,12 +833,18 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-empty": [
       2,
+      {
+        "allowEmptyCatch": false,
+      },
     ],
     "no-empty-character-class": [
       2,
     ],
     "no-empty-pattern": [
       2,
+      {
+        "allowObjectPatternsAsParameters": false,
+      },
     ],
     "no-empty-static-block": [
       2,
@@ -776,15 +854,23 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-extra-boolean-cast": [
       2,
+      {},
     ],
     "no-fallthrough": [
       2,
+      {
+        "allowEmptyCase": false,
+        "reportUnusedFallthroughComment": false,
+      },
     ],
     "no-func-assign": [
       0,
     ],
     "no-global-assign": [
       2,
+      {
+        "exceptions": [],
+      },
     ],
     "no-implied-eval": [
       0,
@@ -794,9 +880,17 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-invalid-regexp": [
       2,
+      {},
     ],
     "no-irregular-whitespace": [
       2,
+      {
+        "skipComments": false,
+        "skipJSXText": false,
+        "skipRegExps": false,
+        "skipStrings": true,
+        "skipTemplates": false,
+      },
     ],
     "no-loss-of-precision": [
       2,
@@ -824,6 +918,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-redeclare": [
       0,
+      {
+        "builtinGlobals": true,
+      },
     ],
     "no-regex-spaces": [
       2,
@@ -833,6 +930,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-self-assign": [
       2,
+      {
+        "props": true,
+      },
     ],
     "no-setter-return": [
       0,
@@ -851,6 +951,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-undef": [
       0,
+      {
+        "typeof": false,
+      },
     ],
     "no-unexpected-multiline": [
       2,
@@ -863,12 +966,24 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-unsafe-negation": [
       0,
+      {
+        "enforceForOrderingRelations": false,
+      },
     ],
     "no-unsafe-optional-chaining": [
       2,
+      {
+        "disallowArithmeticOperators": false,
+      },
     ],
     "no-unused-expressions": [
       0,
+      {
+        "allowShortCircuit": false,
+        "allowTaggedTemplates": false,
+        "allowTernary": false,
+        "enforceForJSX": false,
+      },
     ],
     "no-unused-labels": [
       2,
@@ -899,9 +1014,16 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "prefer-const": [
       2,
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false,
+      },
     ],
     "prefer-promise-reject-errors": [
       0,
+      {
+        "allowEmptyReject": false,
+      },
     ],
     "prefer-rest-params": [
       2,
@@ -1028,9 +1150,16 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "use-isnan": [
       2,
+      {
+        "enforceForIndexOf": false,
+        "enforceForSwitchCase": true,
+      },
     ],
     "valid-typeof": [
       2,
+      {
+        "requireStringLiterals": false,
+      },
     ],
   },
   "settings": {
