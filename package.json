@@ -23,7 +23,7 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "format": "pnpm -s lint --fix && prettier --write .",
     "lint": "pnpm typecheck && eslint .",
     "prepare": "husky",
