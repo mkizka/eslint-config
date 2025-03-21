@@ -1,5 +1,4 @@
-// @ts-check
-import { configs } from "./dist/index.js";
+import { configs } from "./src/index.js";
 
 export default [
   ...configs.typescript(),
