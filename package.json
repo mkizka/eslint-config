@@ -19,7 +19,8 @@
   },
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "tsup",
@@ -58,7 +59,7 @@
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "prettier-plugin-pkg": "^0.18.1",
-    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },
   "publishConfig": {
