@@ -1,6 +1,6 @@
 {
   "name": "@mkizka/eslint-config",
-  "version": "5.6.0",
+  "version": "5.6.1",
   "type": "module",
   "description": "ESLint rules for mkizka",
   "repository": {

@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 5.6.1
+
+### Patch Changes
+
+- 02d63cf: Revert "tailwind設定削除 (#2)"
+
 ## 5.6.0
 
 ### Minor Changes
