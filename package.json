@@ -28,7 +28,6 @@
     "lint": "pnpm typecheck && eslint .",
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
-    "release": "pnpm -s build && np",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
@@ -50,6 +49,7 @@
     "typescript-eslint": "^8.27.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.28.1",
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^22.13.10",
     "eslint": "^9.22.0",
