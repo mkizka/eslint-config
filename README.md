@@ -22,6 +22,5 @@ export default [
     },
   }),
   ...configs.react(),
-  ...configs.tailwind(),
 ];
 ```
