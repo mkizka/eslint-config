@@ -2,4 +2,4 @@
 "@mkizka/eslint-config": patch
 ---
 
-test
+ソースファイルにコードジャンプ出来るように
