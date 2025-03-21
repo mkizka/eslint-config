@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 6.0.0
+
+### Major Changes
+
+- 30b0440: tailwind設定削除
+
 ## 5.6.1
 
 ### Patch Changes
