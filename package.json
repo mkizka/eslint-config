@@ -23,8 +23,7 @@
     "src"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsc",
     "format": "pnpm -s lint --fix && prettier --write .",
     "lint": "pnpm typecheck && eslint .",
     "prepare": "husky",
