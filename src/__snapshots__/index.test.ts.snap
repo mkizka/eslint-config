@@ -101,6 +101,7 @@ exports[`スナップショットテスト > index.js 1`] = `
     "eqeqeq-fix",
     "react",
     "react-hooks:eslint-plugin-react-hooks",
+    "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
@@ -419,6 +420,36 @@ exports[`スナップショットテスト > index.js 1`] = `
     "simple-import-sort/imports": [
       2,
     ],
+    "tailwindcss/classnames-order": [
+      2,
+    ],
+    "tailwindcss/enforces-negative-arbitrary-values": [
+      1,
+    ],
+    "tailwindcss/enforces-shorthand": [
+      1,
+    ],
+    "tailwindcss/migration-from-tailwind-2": [
+      2,
+    ],
+    "tailwindcss/no-arbitrary-value": [
+      0,
+    ],
+    "tailwindcss/no-contradicting-classname": [
+      2,
+    ],
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "callees": [
+          "cn",
+          "cva",
+        ],
+      },
+    ],
+    "tailwindcss/no-unnecessary-arbitrary-value": [
+      1,
+    ],
     "unused-imports/no-unused-imports": [
       2,
     ],
@@ -470,6 +501,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "eqeqeq-fix",
     "react",
     "react-hooks:eslint-plugin-react-hooks",
+    "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
@@ -1062,6 +1094,36 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "simple-import-sort/imports": [
       2,
+    ],
+    "tailwindcss/classnames-order": [
+      2,
+    ],
+    "tailwindcss/enforces-negative-arbitrary-values": [
+      1,
+    ],
+    "tailwindcss/enforces-shorthand": [
+      1,
+    ],
+    "tailwindcss/migration-from-tailwind-2": [
+      2,
+    ],
+    "tailwindcss/no-arbitrary-value": [
+      0,
+    ],
+    "tailwindcss/no-contradicting-classname": [
+      2,
+    ],
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "callees": [
+          "cn",
+          "cva",
+        ],
+      },
+    ],
+    "tailwindcss/no-unnecessary-arbitrary-value": [
+      1,
     ],
     "unused-imports/no-unused-imports": [
       2,

@@ -5,7 +5,11 @@ import { configs } from "./index.js";
 
 const eslint = new ESLint({
   // @ts-expect-error
-  baseConfig: [...configs.typescript(), ...configs.react()],
+  baseConfig: [
+    ...configs.typescript(),
+    ...configs.react(),
+    ...configs.tailwind(),
+  ],
   overrideConfigFile: true,
 });
 
