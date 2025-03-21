@@ -7,9 +7,7 @@ import type { SharableConfig } from "./types.js";
 
 export const react: SharableConfig = () => {
   const configs: ConfigWithExtends[] = [
-    // @ts-expect-error
     reactPlugin.configs.flat.recommended,
-    // @ts-expect-error
     reactPlugin.configs.flat["jsx-runtime"],
     {
       settings: {

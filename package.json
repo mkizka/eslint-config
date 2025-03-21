@@ -25,11 +25,12 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "format": "pnpm -s lint --fix && prettier --write .",
-    "lint": "eslint .",
+    "lint": "pnpm typecheck && eslint .",
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
     "release": "pnpm -s build && np",
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "eslint": ">= 9"
