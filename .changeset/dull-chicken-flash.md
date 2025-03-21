@@ -1,5 +1,5 @@
 ---
-"@mkizka/eslint-config": patch
+"@mkizka/eslint-config": minor
 ---
 
 ソースファイルにコードジャンプ出来るように
