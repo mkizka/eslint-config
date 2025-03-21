@@ -99,22 +99,12 @@ exports[`スナップショットテスト > index.js 1`] = `
     "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
     "unused-imports:unused-imports",
     "eqeqeq-fix",
-    "@dword-design/import-alias",
     "react",
     "react-hooks:eslint-plugin-react-hooks",
     "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
-    "@dword-design/import-alias/prefer-alias": [
-      2,
-      {
-        "alias": {
-          "@": ".",
-        },
-        "aliasForSubpaths": false,
-      },
-    ],
     "@typescript-eslint/eqeqeq": [
       0,
     ],
@@ -509,22 +499,12 @@ exports[`スナップショットテスト > index.ts 1`] = `
     "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
     "unused-imports:unused-imports",
     "eqeqeq-fix",
-    "@dword-design/import-alias",
     "react",
     "react-hooks:eslint-plugin-react-hooks",
     "tailwindcss",
   ],
   "processor": undefined,
   "rules": {
-    "@dword-design/import-alias/prefer-alias": [
-      2,
-      {
-        "alias": {
-          "@": ".",
-        },
-        "aliasForSubpaths": false,
-      },
-    ],
     "@typescript-eslint/await-thenable": [
       2,
     ],

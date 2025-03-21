@@ -29,7 +29,7 @@
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
     "release": "pnpm -s build && np",
-    "test": "pnpm -s build && vitest run"
+    "test": "vitest run"
   },
   "peerDependencies": {
     "eslint": ">= 9"

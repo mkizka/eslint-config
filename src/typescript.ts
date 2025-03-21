@@ -8,9 +8,8 @@ import globals from "globals";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
-import { readAliasFromTsconfig } from "@/utils/read-alias.js";
-
 import type { SharableConfig } from "./types.js";
+import { readAliasFromTsconfig } from "./utils/read-alias.js";
 
 type Options = {
   alias?: Record<string, string>;
