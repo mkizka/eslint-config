@@ -25,11 +25,6 @@ declare module "@dword-design/eslint-plugin-import-alias" {
   export default importAlias;
 }
 
-declare module "eslint-plugin-tailwindcss" {
-  const importAlias: Plugin;
-  export default importAlias;
-}
-
 declare module "eslint-plugin-react-hooks" {
   const reactHooks: Plugin;
   export default reactHooks;
