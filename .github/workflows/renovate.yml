@@ -20,21 +20,16 @@ jobs:
         with:
           app-id: ${{ vars.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
           ref: ${{ github.head_ref }}
           token: ${{ steps.app-token.outputs.token }}
-      - name: Git Identity
+      - name: Run @scaleway/changesets-renovate
         run: |
           git config --global user.name github-actions[bot]
           git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - name: Run @scaleway/changesets-renovate
-        run: |
-          npm i -g corepack@latest
-          corepack enable pnpm
-          pnpm dlx @scaleway/changesets-renovate
+          npx @scaleway/changesets-renovate
   auto-merge:
     runs-on: ubuntu-latest
     if: github.actor == 'renovate[bot]' && github.repository == 'mkizka/eslint-config'
