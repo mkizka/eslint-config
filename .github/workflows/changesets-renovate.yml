@@ -1,0 +1,28 @@
+name: Generate changeset for Renovate
+
+on:
+  pull_request_target:
+    paths:
+      - ".github/workflows/changesets-renovate.yml"
+      - "**/pnpm-lock.yaml"
+      - "**/package.json"
+
+jobs:
+  generate-changeset:
+    runs-on: ubuntu-latest
+    if: github.actor == 'renovate[bot]' && github.repository == 'mkizka/eslint-config'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: ${{ github.head_ref }}
+      - name: Git Identity
+        run: |
+          git config --global user.name github-actions[bot]
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Run @scaleway/changesets-renovate
+        run: |
+          npm i -g corepack@latest
+          corepack enable pnpm
+          pnpm dlx @scaleway/changesets-renovate
