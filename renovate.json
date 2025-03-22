@@ -1,11 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:js-lib"],
+  "rangeStrategy": "bump",
+  "timezone": "Asia/Tokyo",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "minor-patch"
+      "groupName": "minor-patch",
+      "schedule": ["every weekend"]
     }
-  ],
-  "rangeStrategy": "bump"
+  ]
 }
