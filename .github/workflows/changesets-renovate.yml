@@ -1,4 +1,4 @@
-name: Generate changeset for Renovate
+name: Renovate
 
 on:
   pull_request_target:
@@ -35,3 +35,15 @@ jobs:
           npm i -g corepack@latest
           corepack enable pnpm
           pnpm dlx @scaleway/changesets-renovate
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'renovate[bot]' && github.repository == 'mkizka/eslint-config'
+    needs: generate-changeset
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
