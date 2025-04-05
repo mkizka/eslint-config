@@ -11,7 +11,7 @@ jobs:
       contents: write
     steps:
       # Changeset追加時にunit-testなどをトリガーするためにトークンを取得する
-      - uses: actions/create-github-app-token@v1
+      - uses: actions/create-github-app-token@v2
         id: app-token
         with:
           app-id: ${{ vars.BOT_APP_ID }}
