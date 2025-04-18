@@ -48,7 +48,7 @@
     "@changesets/cli": "2.29.2",
     "@tsconfig/node-lts": "22.0.1",
     "@types/node": "22.14.1",
-    "eslint": "9.24.0",
+    "eslint": "9.25.0",
     "husky": "9.1.7",
     "jiti": "2.4.2",
     "lint-staged": "15.5.1",
