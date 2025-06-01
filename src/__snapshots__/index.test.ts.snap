@@ -458,7 +458,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
         "jsx": true,
       },
       "jsxPragma": null,
-      "project": true,
+      "projectService": true,
     },
     "sourceType": "module",
   },
