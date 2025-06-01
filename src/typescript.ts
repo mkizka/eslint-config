@@ -40,7 +40,7 @@ export const typescript: SharableConfig<Options> = (options) => {
       extends: tseslint.configs.strictTypeChecked,
       languageOptions: {
         parserOptions: {
-          project: true,
+          projectService: true,
         },
       },
       rules: {
