@@ -63,12 +63,14 @@ jobs:
                 content: 'eyes'
               });
             }
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - uses: jdx/mise-action@v2
+      - uses: actions/checkout@v4
       - run: |
           npm i -g corepack@latest
           corepack enable pnpm
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
       - run: pnpm i
       - name: Run Claude Code
         id: claude
