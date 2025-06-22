@@ -485,6 +485,12 @@ exports[`スナップショットテスト > index.ts 1`] = `
         "minimumDescriptionLength": 0,
       },
     ],
+    "@typescript-eslint/consistent-type-assertions": [
+      2,
+      {
+        "assertionStyle": "never",
+      },
+    ],
     "@typescript-eslint/consistent-type-imports": [
       2,
     ],
