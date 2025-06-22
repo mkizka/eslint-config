@@ -12,10 +12,12 @@ const eslint = new ESLint({
 describe("スナップショットテスト", () => {
   test("index.js", async () => {
     const result = await eslint.calculateConfigForFile("index.js");
-    expect(result).toMatchSnapshot();
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    expect(result.rules).toMatchSnapshot();
   });
   test("index.ts", async () => {
     const result = await eslint.calculateConfigForFile("index.ts");
-    expect(result).toMatchSnapshot();
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    expect(result.rules).toMatchSnapshot();
   });
 });
