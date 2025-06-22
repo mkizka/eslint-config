@@ -4,10 +4,11 @@ exports[`スナップショットテスト > index.js 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": 2025,
+    "ecmaVersion": 2026,
     "globals": {
       "AbortController": false,
       "AbortSignal": false,
+      "AsyncDisposableStack": false,
       "Blob": false,
       "BroadcastChannel": false,
       "Buffer": false,
@@ -20,6 +21,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "CustomEvent": false,
       "DOMException": false,
       "DecompressionStream": false,
+      "DisposableStack": false,
       "Event": false,
       "EventTarget": false,
       "File": false,
@@ -45,6 +47,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "Request": false,
       "Response": false,
       "SubtleCrypto": false,
+      "SuppressedError": false,
       "TextDecoder": false,
       "TextDecoderStream": false,
       "TextEncoder": false,
@@ -52,6 +55,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "TransformStream": false,
       "TransformStreamDefaultController": false,
       "URL": false,
+      "URLPattern": false,
       "URLSearchParams": false,
       "WebAssembly": false,
       "WebSocket": false,
@@ -81,7 +85,7 @@ exports[`スナップショットテスト > index.js 1`] = `
       "setTimeout": false,
       "structuredClone": false,
     },
-    "parser": "espree@10.3.0",
+    "parser": "espree@10.4.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -454,8 +458,8 @@ exports[`スナップショットテスト > index.ts 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": 2025,
-    "parser": "typescript-eslint/parser@8.27.0",
+    "ecmaVersion": 2026,
+    "parser": "typescript-eslint/parser@8.34.1",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -470,7 +474,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.27.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.34.1",
     "simple-import-sort:eslint-plugin-simple-import-sort@12.1.1",
     "unused-imports:unused-imports",
     "eqeqeq-fix",
@@ -977,7 +981,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
     ],
     "no-with": [
-      2,
+      0,
     ],
     "prefer-const": [
       2,
