@@ -22,6 +22,7 @@ const readTsconfigPaths = () => {
   if (!file) {
     return {};
   }
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   const tsconfig = JSONC.parse(file) as TSConfig;
   return tsconfig.compilerOptions?.paths ?? {};
 };
