@@ -7,28 +7,14 @@ import type { SharableConfig } from "./types.js";
 
 export const react: SharableConfig = () => {
   const configs: ConfigWithExtends[] = [
+    reactPlugin.configs.flat.recommended,
+    reactPlugin.configs.flat["jsx-runtime"],
     {
-      plugins: {
-        react: reactPlugin,
-      },
-      languageOptions: {
-        parserOptions: {
-          ecmaFeatures: {
-            jsx: true,
-          },
-        },
-      },
-      rules: {
-        ...reactPlugin.configs.recommended.rules,
-        ...reactPlugin.configs["jsx-runtime"].rules,
-      },
       settings: {
         react: {
           version: "detect",
         },
       },
-    },
-    {
       rules: {
         "react/prop-types": "off",
       },
