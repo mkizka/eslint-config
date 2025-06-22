@@ -1,5 +1,12 @@
 # @mkizka/eslint-config
 
+## 7.0.1
+
+### Patch Changes
+
+- 76a3adf: Updated dependency `@types/node` to `22.15.19`.
+  Updated dependency `eslint` to `9.27.0`.
+
 ## 7.0.0
 
 ### Major Changes
