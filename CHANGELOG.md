@@ -1,5 +1,15 @@
 # @mkizka/eslint-config
 
+## 7.0.0
+
+### Major Changes
+
+- 5ccc35e: consistent-type-assertionsルール追加
+
+### Patch Changes
+
+- 1aa09c6: Updated dependency `@dword-design/eslint-plugin-import-alias` to `^6.0.0`.
+
 ## 6.0.2
 
 ### Patch Changes
