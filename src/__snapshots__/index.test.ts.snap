@@ -337,6 +337,9 @@ exports[`スナップショットテスト > index.js 1`] = `
     ],
     "no-useless-escape": [
       2,
+      {
+        "allowRegexCharacters": [],
+      },
     ],
     "no-with": [
       2,
@@ -966,6 +969,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     ],
     "no-useless-escape": [
       2,
+      {
+        "allowRegexCharacters": [],
+      },
     ],
     "no-var": [
       2,
