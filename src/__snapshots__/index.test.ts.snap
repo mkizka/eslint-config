@@ -458,7 +458,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
         "jsx": true,
       },
       "jsxPragma": null,
-      "project": true,
+      "projectService": true,
     },
     "sourceType": "module",
   },
@@ -483,6 +483,12 @@ exports[`スナップショットテスト > index.ts 1`] = `
       2,
       {
         "minimumDescriptionLength": 0,
+      },
+    ],
+    "@typescript-eslint/consistent-type-assertions": [
+      2,
+      {
+        "assertionStyle": "never",
       },
     ],
     "@typescript-eslint/consistent-type-imports": [

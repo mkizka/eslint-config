@@ -40,7 +40,7 @@ export const typescript: SharableConfig<Options> = (options) => {
       extends: tseslint.configs.strictTypeChecked,
       languageOptions: {
         parserOptions: {
-          project: true,
+          projectService: true,
         },
       },
       rules: {
@@ -66,6 +66,12 @@ export const typescript: SharableConfig<Options> = (options) => {
         ],
         "@typescript-eslint/no-confusing-void-expression": "off",
         "@typescript-eslint/method-signature-style": "error",
+        "@typescript-eslint/consistent-type-assertions": [
+          "error",
+          {
+            assertionStyle: "never",
+          },
+        ],
       },
     },
     {

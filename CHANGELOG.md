@@ -1,5 +1,12 @@
 # @mkizka/eslint-config
 
+## 6.0.2
+
+### Patch Changes
+
+- 9a6e0a1: projectをprojectServiceに変更
+- 829a9a5: 依存関係更新
+
 ## 6.0.1
 
 ### Patch Changes
