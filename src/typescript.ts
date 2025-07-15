@@ -51,7 +51,6 @@ export const typescript: SharableConfig<Options> = (options) => {
             minimumDescriptionLength: 0,
           },
         ],
-        "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-misused-promises": [
           "error",

@@ -444,7 +444,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
     2,
   ],
   "@typescript-eslint/no-non-null-assertion": [
-    0,
+    2,
   ],
   "@typescript-eslint/no-redundant-type-constituents": [
     2,
