@@ -1,5 +1,28 @@
 # @mkizka/eslint-config
 
+## 7.1.0
+
+### Minor Changes
+
+- 8ba35f2: no-non-null-assertionをエラーに
+
+### Patch Changes
+
+- dc7f14c: Updated dependency `@types/node` to `24.0.5`.
+- 4cc9e4b: Updated dependency `packageManager` to `pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac`.
+- c505c55: Updated dependency `@types/node` to `24.0.10`.
+  Updated dependency `eslint` to `9.30.1`.
+- ea623d7: Updated dependency `@types/node` to `24.0.7`.
+- 34a8f7b: Updated dependency `eslint` to `9.31.0`.
+- f307c45: Updated dependency `packageManager` to `pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad`.
+  Updated dependency `@types/node` to `24.0.13`.
+  Updated dependency `prettier-plugin-pkg` to `0.21.2`.
+- 757cb77: Updated dependency `@types/node` to `24.0.6`.
+  Updated dependency `eslint` to `9.30.0`.
+- abc3206: Updated dependency `packageManager` to `pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184`.
+  Updated dependency `@types/node` to `24.0.4`.
+  Updated dependency `prettier` to `3.6.2`.
+
 ## 7.0.1
 
 ### Patch Changes
