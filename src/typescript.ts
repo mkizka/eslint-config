@@ -44,6 +44,7 @@ export const typescript: SharableConfig<Options> = (options) => {
         },
       },
       rules: {
+        // ts-ignoreよりts-expect-errorを優先するがコメントは不要
         "@typescript-eslint/ban-ts-comment": [
           "error",
           {
@@ -64,8 +65,10 @@ export const typescript: SharableConfig<Options> = (options) => {
             allowNumber: true,
           },
         ],
+        // () => asyncFunc() のような書き方を許容する
         "@typescript-eslint/no-confusing-void-expression": "off",
         "@typescript-eslint/method-signature-style": "error",
+        // asによる型アサーションを禁止する
         "@typescript-eslint/consistent-type-assertions": [
           "error",
           {
