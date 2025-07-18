@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 7.1.1
+
+### Patch Changes
+
+- c68c9ac: tsconfigRootDir追加
+
 ## 7.1.0
 
 ### Minor Changes
