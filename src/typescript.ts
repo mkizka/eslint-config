@@ -5,6 +5,7 @@ import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
+import path from "path";
 import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
@@ -41,6 +42,7 @@ export const typescript: SharableConfig<Options> = (options) => {
       languageOptions: {
         parserOptions: {
           projectService: true,
+          tsconfigRootDir: path.resolve(import.meta.dirname, ".."),
         },
       },
       rules: {
