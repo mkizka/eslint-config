@@ -63,7 +63,7 @@ jobs:
                 content: 'eyes'
               });
             }
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: |
           npm i -g corepack@latest
           corepack enable pnpm
