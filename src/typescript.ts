@@ -115,10 +115,8 @@ export const typescript: SharableConfig<Options> = (options) => {
   ];
   const alias = options?.alias ?? readAliasFromTsconfig();
   if (alias) {
+    configs.push(importAlias.configs.recommended);
     configs.push({
-      plugins: {
-        "@dword-design/import-alias": importAlias,
-      },
       rules: {
         "@dword-design/import-alias/prefer-alias": ["error", { alias }],
       },

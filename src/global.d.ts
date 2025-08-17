@@ -21,7 +21,13 @@ declare module "eslint-plugin-eqeqeq-fix" {
 }
 
 declare module "@dword-design/eslint-plugin-import-alias" {
-  const importAlias: Plugin;
+  import type { ConfigWithExtends } from "typescript-eslint";
+
+  const importAlias: {
+    configs: {
+      recommended: ConfigWithExtends;
+    };
+  };
   export default importAlias;
 }
 
