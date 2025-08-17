@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 7.1.2
+
+### Patch Changes
+
+- 2d23450: import-aliasのエラー修正
+
 ## 7.1.1
 
 ### Patch Changes
