@@ -145,6 +145,9 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "no-misleading-character-class": [
     2,
+    {
+      "allowEscape": false,
+    },
   ],
   "no-new-native-nonconstructor": [
     2,
@@ -722,6 +725,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "no-misleading-character-class": [
     2,
+    {
+      "allowEscape": false,
+    },
   ],
   "no-new-native-nonconstructor": [
     0,
