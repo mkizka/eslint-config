@@ -100,6 +100,13 @@ export const typescript: SharableConfig<Options> = (options) => {
       rules: {
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+          "error",
+          {
+            argsIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+          },
+        ],
       },
     },
     {

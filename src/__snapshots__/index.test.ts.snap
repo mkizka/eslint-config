@@ -145,9 +145,6 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "no-misleading-character-class": [
     2,
-    {
-      "allowEscape": false,
-    },
   ],
   "no-new-native-nonconstructor": [
     2,
@@ -328,6 +325,13 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "unused-imports/no-unused-imports": [
     2,
+  ],
+  "unused-imports/no-unused-vars": [
+    2,
+    {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+    },
   ],
   "use-isnan": [
     2,
@@ -725,9 +729,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "no-misleading-character-class": [
     2,
-    {
-      "allowEscape": false,
-    },
   ],
   "no-new-native-nonconstructor": [
     0,
@@ -955,6 +956,13 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "unused-imports/no-unused-imports": [
     2,
+  ],
+  "unused-imports/no-unused-vars": [
+    2,
+    {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+    },
   ],
   "use-isnan": [
     2,
