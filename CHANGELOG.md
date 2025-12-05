@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 7.2.0
+
+### Minor Changes
+
+- 3fc98f5: no-unused-vars追加
+
 ## 7.1.2
 
 ### Patch Changes
