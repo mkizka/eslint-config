@@ -37,12 +37,11 @@ pnpm preview
 - `src/typescript.ts`: TypeScript向けのESLint設定、厳格な型チェックとimportルールを含む
 - `src/react.ts`: React向けのESLint設定、React Hooksルールを含む
 - `src/types.ts`: 共通の型定義
-- `src/utils/read-alias.ts`: tsconfig.jsonからパスエイリアスを読み取るユーティリティ
 
 ## 設定の構造
 
 - ESLint Flat Configを使用
-- TypeScript設定: 基本ルール + 型チェック + import整理 + alias設定
+- TypeScript設定: 基本ルール + 型チェック + import整理
 - React設定: React推奨ルール + JSX Runtime + Hooks
 - テストファイルでは一部ルールを緩和
 
