@@ -245,123 +245,6 @@ exports[`スナップショットテスト > index.js 1`] = `
   "no-with": [
     2,
   ],
-  "react-hooks/component-hook-factories": [
-    2,
-  ],
-  "react-hooks/config": [
-    2,
-  ],
-  "react-hooks/error-boundaries": [
-    2,
-  ],
-  "react-hooks/exhaustive-deps": [
-    1,
-  ],
-  "react-hooks/gating": [
-    2,
-  ],
-  "react-hooks/globals": [
-    2,
-  ],
-  "react-hooks/immutability": [
-    2,
-  ],
-  "react-hooks/incompatible-library": [
-    1,
-  ],
-  "react-hooks/preserve-manual-memoization": [
-    2,
-  ],
-  "react-hooks/purity": [
-    2,
-  ],
-  "react-hooks/refs": [
-    2,
-  ],
-  "react-hooks/rules-of-hooks": [
-    2,
-  ],
-  "react-hooks/set-state-in-effect": [
-    2,
-  ],
-  "react-hooks/set-state-in-render": [
-    2,
-  ],
-  "react-hooks/static-components": [
-    2,
-  ],
-  "react-hooks/unsupported-syntax": [
-    1,
-  ],
-  "react-hooks/use-memo": [
-    2,
-  ],
-  "react/display-name": [
-    2,
-  ],
-  "react/jsx-key": [
-    2,
-  ],
-  "react/jsx-no-comment-textnodes": [
-    2,
-  ],
-  "react/jsx-no-duplicate-props": [
-    2,
-  ],
-  "react/jsx-no-target-blank": [
-    2,
-  ],
-  "react/jsx-no-undef": [
-    2,
-  ],
-  "react/jsx-uses-react": [
-    0,
-  ],
-  "react/jsx-uses-vars": [
-    2,
-  ],
-  "react/no-children-prop": [
-    2,
-  ],
-  "react/no-danger-with-children": [
-    2,
-  ],
-  "react/no-deprecated": [
-    2,
-  ],
-  "react/no-direct-mutation-state": [
-    2,
-  ],
-  "react/no-find-dom-node": [
-    2,
-  ],
-  "react/no-is-mounted": [
-    2,
-  ],
-  "react/no-render-return-value": [
-    2,
-  ],
-  "react/no-string-refs": [
-    2,
-  ],
-  "react/no-unescaped-entities": [
-    2,
-  ],
-  "react/no-unknown-property": [
-    2,
-  ],
-  "react/no-unsafe": [
-    0,
-  ],
-  "react/prop-types": [
-    0,
-  ],
-  "react/react-in-jsx-scope": [
-    0,
-  ],
-  "react/require-render-return": [
-    2,
-  ],
   "require-yield": [
     2,
   ],
@@ -398,6 +281,574 @@ exports[`スナップショットテスト > index.js 1`] = `
 `;
 
 exports[`スナップショットテスト > index.ts 1`] = `
+{
+  "@typescript-eslint/await-thenable": [
+    2,
+  ],
+  "@typescript-eslint/ban-ts-comment": [
+    2,
+    {
+      "minimumDescriptionLength": 0,
+    },
+  ],
+  "@typescript-eslint/consistent-type-assertions": [
+    2,
+    {
+      "assertionStyle": "never",
+    },
+  ],
+  "@typescript-eslint/consistent-type-imports": [
+    2,
+  ],
+  "@typescript-eslint/eqeqeq": [
+    0,
+  ],
+  "@typescript-eslint/method-signature-style": [
+    2,
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    2,
+  ],
+  "@typescript-eslint/no-array-delete": [
+    2,
+  ],
+  "@typescript-eslint/no-base-to-string": [
+    2,
+  ],
+  "@typescript-eslint/no-confusing-void-expression": [
+    0,
+  ],
+  "@typescript-eslint/no-deprecated": [
+    2,
+  ],
+  "@typescript-eslint/no-duplicate-enum-values": [
+    2,
+  ],
+  "@typescript-eslint/no-duplicate-type-constituents": [
+    2,
+  ],
+  "@typescript-eslint/no-dynamic-delete": [
+    2,
+  ],
+  "@typescript-eslint/no-empty-object-type": [
+    2,
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    2,
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    2,
+  ],
+  "@typescript-eslint/no-extraneous-class": [
+    2,
+  ],
+  "@typescript-eslint/no-floating-promises": [
+    2,
+  ],
+  "@typescript-eslint/no-for-in-array": [
+    2,
+  ],
+  "@typescript-eslint/no-implied-eval": [
+    2,
+  ],
+  "@typescript-eslint/no-invalid-void-type": [
+    2,
+  ],
+  "@typescript-eslint/no-meaningless-void-operator": [
+    2,
+  ],
+  "@typescript-eslint/no-misused-new": [
+    2,
+  ],
+  "@typescript-eslint/no-misused-promises": [
+    2,
+    {
+      "checksVoidReturn": false,
+    },
+  ],
+  "@typescript-eslint/no-misused-spread": [
+    2,
+  ],
+  "@typescript-eslint/no-mixed-enums": [
+    2,
+  ],
+  "@typescript-eslint/no-namespace": [
+    2,
+  ],
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": [
+    2,
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    2,
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
+    2,
+  ],
+  "@typescript-eslint/no-redundant-type-constituents": [
+    2,
+  ],
+  "@typescript-eslint/no-require-imports": [
+    2,
+  ],
+  "@typescript-eslint/no-this-alias": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-condition": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-template-expression": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-arguments": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-assertion": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-conversion": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-parameters": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-argument": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-assignment": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-call": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-declaration-merging": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-enum-comparison": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-function-type": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-member-access": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-return": [
+    2,
+  ],
+  "@typescript-eslint/no-unsafe-unary-minus": [
+    2,
+  ],
+  "@typescript-eslint/no-unused-expressions": [
+    2,
+    {
+      "allowShortCircuit": false,
+      "allowTaggedTemplates": false,
+      "allowTernary": false,
+    },
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    0,
+  ],
+  "@typescript-eslint/no-useless-constructor": [
+    2,
+  ],
+  "@typescript-eslint/no-useless-default-assignment": [
+    2,
+  ],
+  "@typescript-eslint/no-wrapper-object-types": [
+    2,
+  ],
+  "@typescript-eslint/only-throw-error": [
+    2,
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    2,
+  ],
+  "@typescript-eslint/prefer-literal-enum-member": [
+    2,
+  ],
+  "@typescript-eslint/prefer-namespace-keyword": [
+    2,
+  ],
+  "@typescript-eslint/prefer-promise-reject-errors": [
+    2,
+  ],
+  "@typescript-eslint/prefer-reduce-type-parameter": [
+    2,
+  ],
+  "@typescript-eslint/prefer-return-this-type": [
+    2,
+  ],
+  "@typescript-eslint/related-getter-setter-pairs": [
+    2,
+  ],
+  "@typescript-eslint/require-await": [
+    2,
+  ],
+  "@typescript-eslint/restrict-plus-operands": [
+    2,
+    {
+      "allowAny": false,
+      "allowBoolean": false,
+      "allowNullish": false,
+      "allowNumberAndString": false,
+      "allowRegExp": false,
+    },
+  ],
+  "@typescript-eslint/restrict-template-expressions": [
+    2,
+    {
+      "allowNumber": true,
+    },
+  ],
+  "@typescript-eslint/return-await": [
+    2,
+    "error-handling-correctness-only",
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    2,
+  ],
+  "@typescript-eslint/unbound-method": [
+    2,
+  ],
+  "@typescript-eslint/unified-signatures": [
+    2,
+  ],
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": [
+    2,
+  ],
+  "constructor-super": [
+    0,
+  ],
+  "eqeqeq": [
+    0,
+  ],
+  "eqeqeq-fix/eqeqeq": [
+    2,
+  ],
+  "for-direction": [
+    2,
+  ],
+  "getter-return": [
+    0,
+    {
+      "allowImplicit": false,
+    },
+  ],
+  "no-array-constructor": [
+    0,
+  ],
+  "no-async-promise-executor": [
+    2,
+  ],
+  "no-case-declarations": [
+    2,
+  ],
+  "no-class-assign": [
+    0,
+  ],
+  "no-compare-neg-zero": [
+    2,
+  ],
+  "no-cond-assign": [
+    2,
+    "except-parens",
+  ],
+  "no-console": [
+    2,
+    {},
+  ],
+  "no-const-assign": [
+    0,
+  ],
+  "no-constant-binary-expression": [
+    2,
+  ],
+  "no-constant-condition": [
+    2,
+    {
+      "checkLoops": "allExceptWhileTrue",
+    },
+  ],
+  "no-control-regex": [
+    2,
+  ],
+  "no-debugger": [
+    2,
+  ],
+  "no-delete-var": [
+    2,
+  ],
+  "no-dupe-args": [
+    0,
+  ],
+  "no-dupe-class-members": [
+    0,
+  ],
+  "no-dupe-else-if": [
+    2,
+  ],
+  "no-dupe-keys": [
+    0,
+  ],
+  "no-duplicate-case": [
+    2,
+  ],
+  "no-empty": [
+    2,
+    {
+      "allowEmptyCatch": false,
+    },
+  ],
+  "no-empty-character-class": [
+    2,
+  ],
+  "no-empty-pattern": [
+    2,
+    {
+      "allowObjectPatternsAsParameters": false,
+    },
+  ],
+  "no-empty-static-block": [
+    2,
+  ],
+  "no-ex-assign": [
+    2,
+  ],
+  "no-extra-boolean-cast": [
+    2,
+    {},
+  ],
+  "no-fallthrough": [
+    2,
+    {
+      "allowEmptyCase": false,
+      "reportUnusedFallthroughComment": false,
+    },
+  ],
+  "no-func-assign": [
+    0,
+  ],
+  "no-global-assign": [
+    2,
+    {
+      "exceptions": [],
+    },
+  ],
+  "no-implied-eval": [
+    0,
+  ],
+  "no-import-assign": [
+    0,
+  ],
+  "no-invalid-regexp": [
+    2,
+    {},
+  ],
+  "no-irregular-whitespace": [
+    2,
+    {
+      "skipComments": false,
+      "skipJSXText": false,
+      "skipRegExps": false,
+      "skipStrings": true,
+      "skipTemplates": false,
+    },
+  ],
+  "no-loss-of-precision": [
+    2,
+  ],
+  "no-misleading-character-class": [
+    2,
+    {
+      "allowEscape": false,
+    },
+  ],
+  "no-new-native-nonconstructor": [
+    0,
+  ],
+  "no-new-symbol": [
+    0,
+  ],
+  "no-nonoctal-decimal-escape": [
+    2,
+  ],
+  "no-obj-calls": [
+    0,
+  ],
+  "no-octal": [
+    2,
+  ],
+  "no-prototype-builtins": [
+    2,
+  ],
+  "no-redeclare": [
+    0,
+    {
+      "builtinGlobals": true,
+    },
+  ],
+  "no-regex-spaces": [
+    2,
+  ],
+  "no-return-await": [
+    0,
+  ],
+  "no-self-assign": [
+    2,
+    {
+      "props": true,
+    },
+  ],
+  "no-setter-return": [
+    0,
+  ],
+  "no-shadow-restricted-names": [
+    2,
+    {
+      "reportGlobalThis": false,
+    },
+  ],
+  "no-sparse-arrays": [
+    2,
+  ],
+  "no-this-before-super": [
+    0,
+  ],
+  "no-throw-literal": [
+    0,
+  ],
+  "no-undef": [
+    0,
+    {
+      "typeof": false,
+    },
+  ],
+  "no-unexpected-multiline": [
+    2,
+  ],
+  "no-unreachable": [
+    0,
+  ],
+  "no-unsafe-finally": [
+    2,
+  ],
+  "no-unsafe-negation": [
+    0,
+    {
+      "enforceForOrderingRelations": false,
+    },
+  ],
+  "no-unsafe-optional-chaining": [
+    2,
+    {
+      "disallowArithmeticOperators": false,
+    },
+  ],
+  "no-unused-expressions": [
+    0,
+    {
+      "allowShortCircuit": false,
+      "allowTaggedTemplates": false,
+      "allowTernary": false,
+      "enforceForJSX": false,
+      "ignoreDirectives": false,
+    },
+  ],
+  "no-unused-labels": [
+    2,
+  ],
+  "no-unused-private-class-members": [
+    2,
+  ],
+  "no-unused-vars": [
+    0,
+  ],
+  "no-useless-backreference": [
+    2,
+  ],
+  "no-useless-catch": [
+    2,
+  ],
+  "no-useless-constructor": [
+    0,
+  ],
+  "no-useless-escape": [
+    2,
+    {
+      "allowRegexCharacters": [],
+    },
+  ],
+  "no-var": [
+    2,
+  ],
+  "no-with": [
+    0,
+  ],
+  "prefer-const": [
+    2,
+    {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false,
+    },
+  ],
+  "prefer-promise-reject-errors": [
+    0,
+    {
+      "allowEmptyReject": false,
+    },
+  ],
+  "prefer-rest-params": [
+    2,
+  ],
+  "prefer-spread": [
+    2,
+  ],
+  "require-await": [
+    0,
+  ],
+  "require-yield": [
+    2,
+  ],
+  "simple-import-sort/exports": [
+    2,
+  ],
+  "simple-import-sort/imports": [
+    2,
+  ],
+  "unused-imports/no-unused-imports": [
+    2,
+  ],
+  "unused-imports/no-unused-vars": [
+    2,
+    {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+    },
+  ],
+  "use-isnan": [
+    2,
+    {
+      "enforceForIndexOf": false,
+      "enforceForSwitchCase": true,
+    },
+  ],
+  "valid-typeof": [
+    2,
+    {
+      "requireStringLiterals": false,
+    },
+  ],
+}
+`;
+
+exports[`スナップショットテスト > index.tsx 1`] = `
 {
   "@typescript-eslint/await-thenable": [
     2,

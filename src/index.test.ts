@@ -19,4 +19,9 @@ describe("スナップショットテスト", () => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(result.rules).toMatchSnapshot();
   });
+  test("index.tsx", async () => {
+    const result = await eslint.calculateConfigForFile("index.tsx");
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    expect(result.rules).toMatchSnapshot();
+  });
 });
