@@ -9,15 +9,11 @@ import { mkizka } from "@mkizka/eslint-config";
 export default mkizka
 
 // or
-import { defineConfig } from "eslint/config";
+import { defineConfig, globalIgnores } from "eslint/config";
 import { mkizka } from "@mkizka/eslint-config";
 
 export default defineConfig([
-  {
-    ignores: [
-      ...
-    ],
-  },
-  mkizka,
+  globalIgnores([ ... ]),
+  mkizka
 ];
 ```
