@@ -19,8 +19,3 @@ declare module "eslint-plugin-eqeqeq-fix" {
   const eqeqeqFix: Plugin;
   export default eqeqeqFix;
 }
-
-declare module "eslint-plugin-react-hooks" {
-  const reactHooks: Plugin;
-  export default reactHooks;
-}

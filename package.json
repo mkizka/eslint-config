@@ -20,7 +20,7 @@
     "src"
   ],
   "scripts": {
-    "all": "run-s build format test",
+    "all": "run-s build format 'test -u'",
     "build": "tsc --project tsconfig.build.json",
     "format": "eslint . --fix && prettier --write .",
     "lint": "eslint . && prettier --check .",
@@ -37,7 +37,7 @@
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-plugin-eqeqeq-fix": "^1.0.3",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^16.2.0",
