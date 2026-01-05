@@ -1,14 +1,22 @@
-name: Test
+name: Commit
 
 on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
-  unit-test:
+  test:
+    name: Test
+    uses: ./.github/workflows/_test.yml
+  release:
+    name: Release
+    needs: test
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
       - run: |
@@ -20,5 +28,9 @@ jobs:
           cache: pnpm
       - run: pnpm i
       - run: pnpm build
-      - run: pnpm lint
-      - run: pnpm test
+      - uses: changesets/action@v1
+        with:
+          publish: pnpm changeset publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
