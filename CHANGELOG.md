@@ -1,5 +1,18 @@
 # @mkizka/eslint-config
 
+## 8.0.0
+
+### Major Changes
+
+- 0efd22a: インターフェース変更
+- 4a8cff4: Remove @dword-design/eslint-plugin-import-alias
+
+### Minor Changes
+
+- 5658785: 各ルールにnameを追加
+- 79c519d: eslint-plugin-react-hooksをrecommendedに
+- 393d50c: configをdefineConfigに変更
+
 ## 7.2.0
 
 ### Minor Changes
