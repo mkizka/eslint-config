@@ -69,7 +69,7 @@ export const typescript = defineConfig([
     },
   },
   {
-    name: "typescript-tests",
+    name: "typescript-test",
     files: ["**/*.{spec,test}.ts"],
     rules: {
       "@typescript-eslint/no-unsafe-assignment": "off",
