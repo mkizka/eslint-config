@@ -1,17 +1,15 @@
 import eslint from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import gitignore from "eslint-config-flat-gitignore";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import path from "path";
-import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
-import type { SharableConfig } from "./types.js";
-
-export const typescript: SharableConfig = () => {
-  const configs: ConfigWithExtends[] = [
+export const typescript = () =>
+  defineConfig([
     gitignore(),
     {
       extends: [eslint.configs.recommended],
@@ -32,7 +30,7 @@ export const typescript: SharableConfig = () => {
     },
     {
       files: ["**/*.ts", "**/*.tsx"],
-      extends: tseslint.configs.strictTypeChecked,
+      extends: [tseslint.configs.strictTypeChecked],
       languageOptions: {
         parserOptions: {
           projectService: true,
@@ -113,6 +111,4 @@ export const typescript: SharableConfig = () => {
         "eqeqeq-fix/eqeqeq": "error",
       },
     },
-  ];
-  return tseslint.config(...configs);
-};
+  ]);

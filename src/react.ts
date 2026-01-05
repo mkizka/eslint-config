@@ -1,12 +1,9 @@
+import { defineConfig } from "eslint/config";
 import reactPlugin from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import type { ConfigWithExtends } from "typescript-eslint";
-import tseslint from "typescript-eslint";
 
-import type { SharableConfig } from "./types.js";
-
-export const react: SharableConfig = () => {
-  const configs: ConfigWithExtends[] = [
+export const react = () =>
+  defineConfig([
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat["jsx-runtime"],
     {
@@ -28,6 +25,4 @@ export const react: SharableConfig = () => {
         "react-hooks/exhaustive-deps": "error",
       },
     },
-  ];
-  return tseslint.config(...configs);
-};
+  ]);

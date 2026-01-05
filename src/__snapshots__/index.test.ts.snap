@@ -483,6 +483,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   "@typescript-eslint/no-unnecessary-type-constraint": [
     2,
   ],
+  "@typescript-eslint/no-unnecessary-type-conversion": [
+    2,
+  ],
   "@typescript-eslint/no-unnecessary-type-parameters": [
     2,
   ],
@@ -525,6 +528,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
     0,
   ],
   "@typescript-eslint/no-useless-constructor": [
+    2,
+  ],
+  "@typescript-eslint/no-useless-default-assignment": [
     2,
   ],
   "@typescript-eslint/no-wrapper-object-types": [

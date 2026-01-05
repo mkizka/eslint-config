@@ -4,7 +4,6 @@ import { describe, expect, test } from "vitest";
 import { configs } from "./index.js";
 
 const eslint = new ESLint({
-  // @ts-expect-error
   baseConfig: [...configs.typescript(), ...configs.react()],
   overrideConfigFile: true,
 });
