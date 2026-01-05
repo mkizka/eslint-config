@@ -11,23 +11,22 @@ import tseslint from "typescript-eslint";
 export const typescript = defineConfig([
   gitignore(),
   {
+    name: "base",
     extends: [eslint.configs.recommended],
     linterOptions: {
       reportUnusedDisableDirectives: "error",
+    },
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
     },
     rules: {
       "no-console": "error",
     },
   },
   {
-    files: ["**/*.js", "**/*.jsx"],
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
-    },
-  },
-  {
+    name: "typescript",
     files: ["**/*.ts", "**/*.tsx"],
     extends: [tseslint.configs.strictTypeChecked],
     languageOptions: {
@@ -70,12 +69,14 @@ export const typescript = defineConfig([
     },
   },
   {
+    name: "typescript-tests",
     files: ["**/*.{spec,test}.ts"],
     rules: {
       "@typescript-eslint/no-unsafe-assignment": "off",
     },
   },
   {
+    name: "simple-import-sort",
     plugins: {
       "simple-import-sort": simpleImportSort,
     },
@@ -85,6 +86,7 @@ export const typescript = defineConfig([
     },
   },
   {
+    name: "unused-imports",
     plugins: {
       "unused-imports": unusedImports,
     },
@@ -101,6 +103,7 @@ export const typescript = defineConfig([
     },
   },
   {
+    name: "eqeqeq-fix",
     plugins: {
       "eqeqeq-fix": eqeqeqFix,
     },

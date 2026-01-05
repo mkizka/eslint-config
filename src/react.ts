@@ -3,9 +3,12 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 
 export const react = defineConfig([
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat["jsx-runtime"],
   {
+    name: "react",
+    extends: [
+      reactPlugin.configs.flat.recommended,
+      reactPlugin.configs.flat["jsx-runtime"],
+    ],
     settings: {
       react: {
         version: "detect",
@@ -16,6 +19,7 @@ export const react = defineConfig([
     },
   },
   {
+    name: "react-hooks",
     plugins: {
       "react-hooks": reactHooks,
     },
