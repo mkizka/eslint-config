@@ -1,10 +1,10 @@
 import { ESLint } from "eslint";
 import { describe, expect, test } from "vitest";
 
-import { configs } from "./index.js";
+import { mkizka } from "./index.js";
 
 const eslint = new ESLint({
-  baseConfig: [...configs.typescript(), ...configs.react()],
+  baseConfig: mkizka,
   overrideConfigFile: true,
 });
 

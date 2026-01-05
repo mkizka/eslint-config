@@ -4,23 +4,20 @@ ESLint rules for mkizka
 
 ```js
 // eslint.config.js
-import { configs } from "@mkizka/eslint-config";
+import { mkizka } from "@mkizka/eslint-config";
 
-export default configs.typescript()
+export default mkizka
 
 // or
+import { defineConfig } from "eslint/config";
+import { mkizka } from "@mkizka/eslint-config";
 
-export default [
+export default defineConfig([
   {
     ignores: [
       ...
     ],
   },
-  ...configs.typescript({
-    alias: {
-      "@": "./app", // 指定しなかった場合はtsconfig.jsonの内容を使用します
-    },
-  }),
-  ...configs.react(),
+  mkizka,
 ];
 ```

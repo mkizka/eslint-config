@@ -1,7 +1,6 @@
+import { defineConfig } from "eslint/config";
+
 import { react } from "./react.js";
 import { typescript } from "./typescript.js";
 
-export const configs = {
-  typescript,
-  react,
-} as const;
+export const mkizka = defineConfig(typescript, react);
