@@ -1,4 +1,3 @@
-import importAlias from "@dword-design/eslint-plugin-import-alias";
 import eslint from "@eslint/js";
 import gitignore from "eslint-config-flat-gitignore";
 import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
@@ -10,13 +9,8 @@ import type { ConfigWithExtends } from "typescript-eslint";
 import tseslint from "typescript-eslint";
 
 import type { SharableConfig } from "./types.js";
-import { readAliasFromTsconfig } from "./utils/read-alias.js";
 
-type Options = {
-  alias?: Record<string, string>;
-};
-
-export const typescript: SharableConfig<Options> = (options) => {
+export const typescript: SharableConfig = () => {
   const configs: ConfigWithExtends[] = [
     gitignore(),
     {
@@ -120,14 +114,5 @@ export const typescript: SharableConfig<Options> = (options) => {
       },
     },
   ];
-  const alias = options?.alias ?? readAliasFromTsconfig();
-  if (alias) {
-    configs.push(importAlias.configs.recommended);
-    configs.push({
-      rules: {
-        "@dword-design/import-alias/prefer-alias": ["error", { alias }],
-      },
-    });
-  }
   return tseslint.config(...configs);
 };

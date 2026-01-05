@@ -20,17 +20,6 @@ declare module "eslint-plugin-eqeqeq-fix" {
   export default eqeqeqFix;
 }
 
-declare module "@dword-design/eslint-plugin-import-alias" {
-  import type { ConfigWithExtends } from "typescript-eslint";
-
-  const importAlias: {
-    configs: {
-      recommended: ConfigWithExtends;
-    };
-  };
-  export default importAlias;
-}
-
 declare module "eslint-plugin-react-hooks" {
   const reactHooks: Plugin;
   export default reactHooks;
