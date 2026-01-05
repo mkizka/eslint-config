@@ -20,9 +20,10 @@
     "src"
   ],
   "scripts": {
+    "all": "run-s build format test",
     "build": "tsc --project tsconfig.build.json",
-    "format": "pnpm -s lint --fix && prettier --write .",
-    "lint": "pnpm typecheck && eslint .",
+    "format": "eslint . --fix && prettier --write .",
+    "lint": "eslint . && prettier --check .",
     "prepare": "husky",
     "preview": "pnpm -s dlx @eslint/config-inspector@latest",
     "test": "vitest run",
@@ -50,6 +51,7 @@
     "husky": "9.1.7",
     "jiti": "2.6.1",
     "lint-staged": "16.2.7",
+    "npm-run-all2": "^8.0.4",
     "prettier": "3.7.4",
     "prettier-plugin-pkg": "0.21.2",
     "typescript": "5.9.3",
