@@ -1,7 +1,6 @@
 import eslint from "@eslint/js";
 import { defineConfig } from "eslint/config";
 import gitignore from "eslint-config-flat-gitignore";
-import eqeqeqFix from "eslint-plugin-eqeqeq-fix";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
@@ -23,6 +22,7 @@ export const typescript = defineConfig([
     },
     rules: {
       "no-console": "error",
+      eqeqeq: "error",
     },
   },
   {
@@ -100,17 +100,6 @@ export const typescript = defineConfig([
           varsIgnorePattern: "^_",
         },
       ],
-    },
-  },
-  {
-    name: "eqeqeq-fix",
-    plugins: {
-      "eqeqeq-fix": eqeqeqFix,
-    },
-    rules: {
-      eqeqeq: "off",
-      "@typescript-eslint/eqeqeq": "off",
-      "eqeqeq-fix/eqeqeq": "error",
     },
   },
 ]);
