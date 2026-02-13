@@ -2,9 +2,6 @@
 
 exports[`スナップショットテスト > index.js 1`] = `
 {
-  "@typescript-eslint/eqeqeq": [
-    0,
-  ],
   "@typescript-eslint/no-unused-vars": [
     0,
   ],
@@ -12,9 +9,6 @@ exports[`スナップショットテスト > index.js 1`] = `
     2,
   ],
   "eqeqeq": [
-    0,
-  ],
-  "eqeqeq-fix/eqeqeq": [
     2,
   ],
   "for-direction": [
@@ -300,9 +294,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
   "@typescript-eslint/consistent-type-imports": [
     2,
   ],
-  "@typescript-eslint/eqeqeq": [
-    0,
-  ],
   "@typescript-eslint/method-signature-style": [
     2,
   ],
@@ -527,9 +518,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
     0,
   ],
   "eqeqeq": [
-    0,
-  ],
-  "eqeqeq-fix/eqeqeq": [
     2,
   ],
   "for-direction": [
@@ -868,9 +856,6 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "@typescript-eslint/consistent-type-imports": [
     2,
   ],
-  "@typescript-eslint/eqeqeq": [
-    0,
-  ],
   "@typescript-eslint/method-signature-style": [
     2,
   ],
@@ -1095,9 +1080,6 @@ exports[`スナップショットテスト > index.tsx 1`] = `
     0,
   ],
   "eqeqeq": [
-    0,
-  ],
-  "eqeqeq-fix/eqeqeq": [
     2,
   ],
   "for-direction": [
