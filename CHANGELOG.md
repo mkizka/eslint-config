@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 8.0.1
+
+### Patch Changes
+
+- d73507d: eqeqeq-fixを標準ルールのeqeqeqに変更
+
 ## 8.0.0
 
 ### Major Changes
