@@ -188,6 +188,9 @@ exports[`スナップショットテスト > index.js 1`] = `
   "no-this-before-super": [
     2,
   ],
+  "no-unassigned-vars": [
+    2,
+  ],
   "no-undef": [
     2,
     {
@@ -224,6 +227,9 @@ exports[`スナップショットテスト > index.js 1`] = `
   "no-unused-vars": [
     2,
   ],
+  "no-useless-assignment": [
+    2,
+  ],
   "no-useless-backreference": [
     2,
   ],
@@ -238,6 +244,12 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "no-with": [
     2,
+  ],
+  "preserve-caught-error": [
+    2,
+    {
+      "requireCatchParameter": false,
+    },
   ],
   "require-yield": [
     2,
@@ -712,6 +724,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   "no-throw-literal": [
     0,
   ],
+  "no-unassigned-vars": [
+    2,
+  ],
   "no-undef": [
     0,
     {
@@ -758,6 +773,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   "no-unused-vars": [
     0,
   ],
+  "no-useless-assignment": [
+    2,
+  ],
   "no-useless-backreference": [
     2,
   ],
@@ -797,6 +815,12 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "prefer-spread": [
     2,
+  ],
+  "preserve-caught-error": [
+    2,
+    {
+      "requireCatchParameter": false,
+    },
   ],
   "require-await": [
     0,
@@ -1274,6 +1298,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "no-throw-literal": [
     0,
   ],
+  "no-unassigned-vars": [
+    2,
+  ],
   "no-undef": [
     0,
     {
@@ -1320,6 +1347,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "no-unused-vars": [
     0,
   ],
+  "no-useless-assignment": [
+    2,
+  ],
   "no-useless-backreference": [
     2,
   ],
@@ -1359,6 +1389,12 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "prefer-spread": [
     2,
+  ],
+  "preserve-caught-error": [
+    2,
+    {
+      "requireCatchParameter": false,
+    },
   ],
   "react-hooks/component-hook-factories": [
     2,
