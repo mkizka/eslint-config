@@ -1,5 +1,15 @@
 # @mkizka/eslint-config
 
+## 9.0.0
+
+### Major Changes
+
+- 36d28fe: eslint v10に更新
+
+### Patch Changes
+
+- d73507d: eqeqeq-fixを標準ルールのeqeqeqに変更
+
 ## 8.0.0
 
 ### Major Changes
