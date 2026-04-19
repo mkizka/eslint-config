@@ -1,5 +1,11 @@
 # @mkizka/eslint-config
 
+## 10.0.0
+
+### Major Changes
+
+- a07a963: eslint-plugin-react(-hooks)をeslint-reactに移行
+
 ## 9.0.0
 
 ### Major Changes
