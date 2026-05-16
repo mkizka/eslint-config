@@ -862,9 +862,6 @@ exports[`スナップショットテスト > index.ts 1`] = `
 
 exports[`スナップショットテスト > index.tsx 1`] = `
 {
-  "@eslint-react/component-hook-factories": [
-    2,
-  ],
   "@eslint-react/dom-no-dangerously-set-innerhtml": [
     1,
   ],
@@ -888,12 +885,6 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "@eslint-react/dom-no-script-url": [
     1,
-  ],
-  "@eslint-react/dom-no-string-style-prop": [
-    0,
-  ],
-  "@eslint-react/dom-no-unknown-property": [
-    0,
   ],
   "@eslint-react/dom-no-unsafe-iframe-sandbox": [
     1,
@@ -921,6 +912,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "@eslint-react/jsx-no-key-after-spread": [
     2,
+  ],
+  "@eslint-react/jsx-no-leaked-dollar": [
+    1,
   ],
   "@eslint-react/jsx-no-leaked-semicolon": [
     1,
@@ -991,9 +985,6 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "@eslint-react/no-nested-lazy-component-declarations": [
     2,
   ],
-  "@eslint-react/no-redundant-should-component-update": [
-    2,
-  ],
   "@eslint-react/no-set-state-in-component-did-mount": [
     1,
   ],
@@ -1036,6 +1027,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "@eslint-react/set-state-in-render": [
     2,
   ],
+  "@eslint-react/static-components": [
+    2,
+  ],
   "@eslint-react/unsupported-syntax": [
     2,
   ],
@@ -1046,6 +1040,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
     1,
   ],
   "@eslint-react/web-api-no-leaked-event-listener": [
+    1,
+  ],
+  "@eslint-react/web-api-no-leaked-fetch": [
     1,
   ],
   "@eslint-react/web-api-no-leaked-interval": [
