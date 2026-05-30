@@ -10,6 +10,7 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "eqeqeq": [
     2,
+    "always",
   ],
   "for-direction": [
     2,
@@ -226,6 +227,15 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "no-unused-vars": [
     2,
+    {
+      "args": "after-used",
+      "caughtErrors": "all",
+      "ignoreClassWithStaticInitBlock": false,
+      "ignoreRestSiblings": false,
+      "ignoreUsingDeclarations": false,
+      "reportUsedIgnorePattern": false,
+      "vars": "all",
+    },
   ],
   "no-useless-assignment": [
     2,
@@ -531,6 +541,7 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "eqeqeq": [
     2,
+    "always",
   ],
   "for-direction": [
     2,
@@ -772,6 +783,15 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "no-unused-vars": [
     0,
+    {
+      "args": "after-used",
+      "caughtErrors": "all",
+      "ignoreClassWithStaticInitBlock": false,
+      "ignoreRestSiblings": false,
+      "ignoreUsingDeclarations": false,
+      "reportUsedIgnorePattern": false,
+      "vars": "all",
+    },
   ],
   "no-useless-assignment": [
     2,
@@ -1297,6 +1317,7 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "eqeqeq": [
     2,
+    "always",
   ],
   "for-direction": [
     2,
@@ -1538,6 +1559,15 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "no-unused-vars": [
     0,
+    {
+      "args": "after-used",
+      "caughtErrors": "all",
+      "ignoreClassWithStaticInitBlock": false,
+      "ignoreRestSiblings": false,
+      "ignoreUsingDeclarations": false,
+      "reportUsedIgnorePattern": false,
+      "vars": "all",
+    },
   ],
   "no-useless-assignment": [
     2,
