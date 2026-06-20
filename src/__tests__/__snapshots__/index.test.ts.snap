@@ -1065,6 +1065,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   "@eslint-react/web-api-no-leaked-fetch": [
     1,
   ],
+  "@eslint-react/web-api-no-leaked-intersection-observer": [
+    1,
+  ],
   "@eslint-react/web-api-no-leaked-interval": [
     1,
   ],
