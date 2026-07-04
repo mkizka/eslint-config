@@ -46,6 +46,9 @@ exports[`スナップショットテスト > index.js 1`] = `
   ],
   "no-constant-binary-expression": [
     2,
+    {
+      "checkRelationalComparisons": false,
+    },
   ],
   "no-constant-condition": [
     2,
@@ -580,6 +583,9 @@ exports[`スナップショットテスト > index.ts 1`] = `
   ],
   "no-constant-binary-expression": [
     2,
+    {
+      "checkRelationalComparisons": false,
+    },
   ],
   "no-constant-condition": [
     2,
@@ -1359,6 +1365,9 @@ exports[`スナップショットテスト > index.tsx 1`] = `
   ],
   "no-constant-binary-expression": [
     2,
+    {
+      "checkRelationalComparisons": false,
+    },
   ],
   "no-constant-condition": [
     2,
