@@ -8,7 +8,7 @@
     "url": "https://github.com/mkizka/eslint-config.git"
   },
   "license": "MIT",
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@11.25.0",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -49,7 +49,7 @@
     "eslint": "10.9.1",
     "husky": "9.1.7",
     "jiti": "2.7.0",
-    "lint-staged": "17.3.0",
+    "lint-staged": "17.4.1",
     "npm-run-all2": "9.0.3",
     "prettier": "3.9.6",
     "prettier-plugin-pkg": "0.22.1",
