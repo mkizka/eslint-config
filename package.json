@@ -8,7 +8,7 @@
     "url": "https://github.com/mkizka/eslint-config.git"
   },
   "license": "MIT",
-  "packageManager": "pnpm@11.26.0",
+  "packageManager": "pnpm@12.4.0",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
