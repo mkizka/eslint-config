@@ -8,7 +8,7 @@
     "url": "https://github.com/mkizka/eslint-config.git"
   },
   "license": "MIT",
-  "packageManager": "pnpm@12.4.2",
+  "packageManager": "pnpm@12.6.0",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -33,7 +33,7 @@
     "eslint": ">= 10"
   },
   "dependencies": {
-    "@eslint-react/eslint-plugin": "5.19.1",
+    "@eslint-react/eslint-plugin": "5.20.5",
     "@eslint/js": "^10.0.1",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-plugin-simple-import-sort": "^14.0.0",
@@ -44,14 +44,14 @@
   "devDependencies": {
     "@changesets/cli": "3.0.3",
     "@tsconfig/node-lts": "24.0.1",
-    "@types/node": "24.13.4",
+    "@types/node": "24.13.6",
     "@types/react": "19.3.0",
-    "eslint": "10.10.0",
+    "eslint": "10.11.0",
     "husky": "9.1.7",
     "jiti": "2.7.0",
     "lint-staged": "17.5.1",
     "npm-run-all2": "9.0.3",
-    "prettier": "3.9.6",
+    "prettier": "3.9.8",
     "prettier-plugin-pkg": "0.22.1",
     "typescript": "6.0.3",
     "vitest": "5.0.1"
