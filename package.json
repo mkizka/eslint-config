@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "3.0.3",
-    "@tsconfig/node-lts": "24.0.1",
+    "@tsconfig/node-lts": "26.0.1",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "eslint": "10.14.0",
